@@ -20,7 +20,7 @@ body {
 header {
     display: flex;
     justify-content: center;
-    background-color: #646b77;
+    background-color: #40495a;
     width: 100%;
 }
 /* .fondo {
@@ -33,7 +33,7 @@ header {
     height: 700px;
     width: 55px;
     background-color: #222831;
-    box-shadow: 10px 0 0 #646b77;
+    box-shadow: 10px 0 0 #40495a;
     border-left: 1px solid #222831;
     overflow: hidden;
     transition: width 0.5s;
@@ -61,7 +61,7 @@ header {
 }
 
 .navigation ul li.active {
-    background-color: #646b77;
+    background-color: #40495a;
 }
 
 .navigation ul li a {
