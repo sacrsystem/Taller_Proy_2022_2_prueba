@@ -14,6 +14,7 @@ body {
     width: 100%;
     height: 100%;
     background-image: url(imagens/fondo.png);
+    background-attachment: fixed
     /* min-height: 100vh; */
     /* background-color: #EEEEEE; */
 }
