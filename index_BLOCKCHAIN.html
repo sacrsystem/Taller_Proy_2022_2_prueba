@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>TALLER DE PROCESOS</title>
-    <link rel="stylesheet" href="Styles/style.css">
+    <link rel="stylesheet" href="Styles/style_BLOCKCHAIN.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
 </head>
 
@@ -118,11 +118,81 @@
     </div>
 
     <div class="col-10">
-        <div>
-            <h1 class="">GRUPO BLOCKCHAIN</h1>
-            <p>Página principal del curso: El tema a investigar y desarrollar es “Campus Inteligente”, se deberá crear soluciones utilizando tecnología IoT, Machine Learning, Realidad Aumentada,  Realidad Virtual u otras tecnologías disruptivas.</p>
-            <p>
-        </div>
+        <main>
+            <section class="acerca-de">
+                <div class="contenedor">
+                    <h2 class="sobre-nosotros">GRUPO : BLOCKCHAIN</h2>
+                    <h3 class="slogan"> <b> PROYECTO : SMART CHAIN </b></h3>
+                    <p class="parrafo">  <b> PROBLEMÁTICA</b></p>
+                    <p class="parrafo"><b> Actualmente existe varios reclamos sobre la pensión universitaria ya que no
+                         ha variado mucho con respecto a la pensión que se cobraba antes de la pandemia.</b></p>
+ 
+                    <p class="parrafo">  <b> SOLUCIÓN</b></p>
+                    <p class="parrafo"><b>Crear un Smart Contract que permita registrar todas las transferencias de dinero
+                         que hagan uso del fondo universitario, brindando mayor transparencia a los alumnos dándoles mayor tranquilidad 
+                        ya que estos podrán ver como su dinero invertido está siendo utilizado por la universidad.</b></p>
+                </div>
+                
+            </section>
+            <section class="integrantes">
+                <h2>Integrantes del Proyecto</h2>
+                <hr>
+                <div class="container">       
+                      <div class="integrante">
+                          <img src="imagens/SC_BLOCKCHAIN/RAUL.jpeg" alt=""/>
+                          <p> RAUL EDUARDO MALLCCO SOLIS <br /> raul_mallcco@usmp.pe <br/> <strong>Líder de equipo</strong> </p>
+                      </div>
+                      <div class="integrante">
+                          <img src="imagens/SC_BLOCKCHAIN/KASANDRA.jpeg" alt=""/>
+                          <p> ANGELICA KASANDRA RIVERA LAYNES <br /> Angelica_rivera@usmp.pe <br/> <strong>QA</strong> </p>
+                      </div>
+                      <div class="integrante">
+                          <img src="imagens/SC_BLOCKCHAIN/Erik.jpeg" alt=""/>
+                          <p> ERIK JOEL ESPINOZA MENDOZA <br /> erik_espinoza@usmp.pe<br/> <strong>Investigador</strong></p>
+                      </div> 
+                </div>
+                <br>
+                <div class="container">  
+                      <div class="integrante">
+                          <img src="https://image.flaticon.com/icons/png/128/456/456212.png" alt=""/>
+                          <p> JEAN PAUL CHANGANAQUI ARROYO <br /> jean_changanaqui@usmp.pe<br/> <strong>Programador</strong></p>
+                      </div>
+                </div>
+                <hr>
+            </section>
+            <div class="card mb-3">
+                <h3 style="text-align: center;">Arquitectura del proyecto</h3>
+                <hr>                
+                <img class="card-img-top" src="imagens/SC_BLOCKCHAIN/ARQUITECTURA.png" height="1000px"  alt="">
+              </div>
+              <div class="card-body">
+                <p class="parrafo"><b>La arquitectura del proyecto está compuesto por:</b></p>
+                <p class="parrafo"><b>1.-La API con la que el usuario podrá interactuar con el Smart Contract.</b></p>
+                <p class="parrafo"><b>2.-El contrato inteligente que realizará la gestión de la información de manera autónoma o por invocación del usuario cuando detectan eventos externos.</b></p>
+                <p class="parrafo"><b>3.-El mecanismo de consenso que aprueba las transacciones lanzadas por el contrato inteligente.</b></p>
+                <p class="parrafo"><b>4.-La cadena de bloques cuya información almacenada no se podrá alterar.</b></p>
+              </div>
+              <div class="contenedor">
+                <h2 class="titulo" style="text-align: center;">Nuestros servicios</h2>
+                <div class="servicio-cont">
+                    <div class="servicio-ind">
+                        <img src="imagens/SC_BLOCKCHAIN/Remix.jpeg" alt="">
+                        <h3>REMIX - ETHEREUM</h3>
+                        <p>Es un compilador y un IDE basado en explorador y que se pueden usar para compilar contratos Ethereum en el lenguaje Solidity y para depurar transacciones. Remix constituye una excelente manera de explorar contratos de ejemplo, además, se puede usar para escribir, probar e implementar sus propios contratos.</p>
+                    </div>
+                    <div class="servicio-ind">
+                        <img src="imagens/SC_BLOCKCHAIN/VS.jpeg" alt="">
+                        <h3>VS CODE</h3>
+                       <p>Es un editor de código que se ha refinado y optimizado para compilar y depurar aplicaciones web y en las nubes modernas.</p>
+                    </div>
+                    <div class="servicio-ind">
+                        <img src="imagens/SC_BLOCKCHAIN/Metamask.jpeg" alt="">
+                        <h3>METAMASK</h3>
+                       <p>Metamask es un monedero de criptomonedas que se puede usar en navegadores como Chrome y Firefox. Pero no solo eso, pues también es una extensión que se puede emplear en dichos navegadores. ¿Para qué serviría Metamask como extensión? Pues funcionaría como una especie de puente de enlace entre los navegadores normales y la cadena de bloques Ethereum.</p>
+                    </div>
+                </div>
+            </div>  
+        </main>
     </div>
 
     <script type="text/javascript">
@@ -142,3 +212,48 @@
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>
 </html>
+
+<style>
+
+    .integrantes{
+        color: #000000;
+        padding: 40px 0;
+        text-align: center;
+    }
+    .integrante{
+        width:32%;
+        display: inline-block;
+        font-size: 16px;
+        border: 1px solid #000000;
+        -moz-border-radius: 10px;
+        -webkit-border-radius: 10px;
+        box-shadow: 5px 5px 2px 1px rgba(0, 0, 0, 0.2);
+    }
+    .arquitectura{
+        width: 50%;
+    }
+    .integrante img{
+        width: 40%;
+        height: 200px;
+        padding-top: 5%;
+        padding-bottom: 5%;
+    }
+    @media only screen and (max-width : 500px){
+        section{
+            padding: 25px 0 15px 0;
+        }
+        .integrante{
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: left;
+            margin: 0 0 10px 0;
+            font-size: 12px;
+        }
+        .integrante img{
+            width: 20%;
+            height: 20%;
+        }
+    }
+</style>
