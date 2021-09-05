@@ -140,6 +140,8 @@
                 </div>
             </div>
             <br>
+            <hr>
+            <br>
             <h1 class="text-center">Herramientas Utilizadas</h1>
             <br>
             <div class="container">
@@ -178,11 +180,47 @@
                     </div>
                 </div>
             </div>
-
+            <br>
+            <hr>
+            <br>
+            <h3>Diagrama de Arquitectura</h3>
+            <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img class="d-block w-100" src="imagens/SC_IBM/Arquitectura - IBM.png" alt="First slide">
+                  </div>
+                </div>
+                <h3>Descripción</h3>
+                <p>
+                    Nuestro proyecto se trata de crear un asistente inteligente con Watson para resolver consultas diarias de los 
+                    estudiantes de Universidad San Martin de Porres sobre los temas que son los docentes, aulas, cursos y horarios ya
+                    que a veces siempre hay problemas porque no saben el número de laboratorio o aula que les toco o en que pabellón 
+                    se encuentra ubicado el aula, la información detallada del curso ya que cada semestre cambia el silabo , docentes, horarios con el objetivo resolver sus dudas, brindarles la información necesaria a los estudiantes a cualquier hora del día.
+                    Explicaremos más a profundidad como es la arquitectura de nuestro proyecto iniciamos con el desarrollador, el cual implementara la 
+                    programación del sitio web por medio de visual studio code, donde se estructurará el código para su diseño y funcionalidad, iniciado el 
+                    proceso de creación del sitio, contaremos con el creador de repositorios git para el uso grupal y creación de ramas según se desarrolle el proyecto. 
+                    Pará deployar el sitio web se necesita el Azure Devops, donde se trabajó conjuntamente las historias de usuario y el proceso grupal de cada rama, para que así se haga el requerimiento de los servicios web, cabe resaltar que el servicio web cuenta con la nube de IBM, interactuando directamente con un Gateway de Voz, se le denomina Gateway Service para Watson, este servicio trabaja con la interfaz del sitio y con su implementación en Internet.
+                    Hasta ahí la creación y estructuración del sitio web, ahora el desarrollo descriptivo del servicio Watson.
+                    El usuario va a utilizar nuestro asistente Watson, lo utiliza mediamente la interfaz del chatbot que propone nuestro sitio web,
+                    lo hará de manera oral de tal manera que el chatbot lo transcribirá, para lograr la transcripción se contará con una API llamada 
+                    speech to text, esta API procesará el audio a bits y lo enviará al servicio Watson Assistant donde se hará la transformación de audio 
+                    a texto, contando con la ia del mismo servicio para la creación de la consulta por parte del usuario, después de la transformación lo 
+                    plasmara en el servicio de chatbot para que después cumpla con la función del guardado en la base de datos, de esa manera el chatbot 
+                    se alimente de las consultas de los usuarios, después de la información guardada, pasa y da registro de la respuesta a la web service 
+                    donde contará con la interfaz previamente creada y con el uso de Internet podrá enviar la respuesta al chatbot con otra funcionalidad 
+                    del servicio Watson, después enviándola al servicio de Watson Assistant para que la procese y para que así obtenga el contexto y 
+                    verifique si es la respuesta correcta implementada anteriormente en la base de datos gracias a la nube con el servicio de 
+                    Watson Assistant, y para finalizar el envío de la respuesta al usuario que realizó la consulta.
+                </p>
+            </div>
+            
+            <br>
+            <hr>
+            <br>
             
               <section class="integrantes">
                   <h2>Integrantes del Proyecto</h2>
-                  <hr>
+                    <br>
                   <div class="container">       
                         <div class="integrante">
                             <img src="imagens/SC_IBM/integrante4.jpg" style="border-radius: 50%;" alt=""/>
@@ -218,7 +256,24 @@
     </div>
 
     <footer>
-
+        <div class="footer-top" style="background-color: #40495a;">
+            <br>
+            <div class="container" data-aos="fade-up" >
+                <div class="row  justify-content-center">
+                    <img class="container" src="imagens/Principal/usmp.png" style="width: 80%;">
+                </div>
+                <div class="row  justify-content text-center">
+                    <h3 class="container text-light" >Curso Taller Proyectos</h3>
+                </div>
+                <div class="row  justify-content-center">
+                    <h3 class="container text-light" style="text-align: center;" >Dirección: Sede Lima: Jr. Las Calandrias N° 151 – 291 Santa Anita, Lima - Perú</h3>
+                </div>
+                <div class="row  justify-content text-center ">
+                    <h4 class="container text-light" >Copyright ©️ 2021 Taller Proyectos- FIA, USMP </h4>
+                </div>
+            </div>
+            <br>
+        </div>
     </footer>
 
     <script type="text/javascript">
