@@ -5,10 +5,13 @@
     <title>TALLER DE PROCESOS</title>
     <link rel="stylesheet" href="Styles/style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </head>
 
 <body class="row">
-    <header class="justify-content-center" style="padding-right: 0px;">
+    <header class="row justify-content-center" style="padding-left: -250px;">
         <div class="col-6 text-center d-flex align-items-center">
             <a target="blank" href="https://www.usmp.edu.pe/"><img class="container" src="imagens/Principal/usmp.png" style="width: 95%;"></a>
         </div>
@@ -16,6 +19,7 @@
             <h1 class="container text-light" style="font-family: cursive; font-size: 300%;">TALLER DE PROYECTOS</h1>
         </div>
     </header>
+    
     <div class="col-2">
         <div class="navigation">
             <ul>
@@ -117,13 +121,55 @@
         </div>
     </div>
 
-    <div class="col-10">
+    <div class="col-10" style="padding-right: 100px;">
         <div>
-            <h1 class="">PRINCIPAL</h1>
-            <p>Página principal del curso: El tema a investigar y desarrollar es “Campus Inteligente”, se deberá crear soluciones utilizando tecnología IoT, Machine Learning, Realidad Aumentada,  Realidad Virtual u otras tecnologías disruptivas.</p>
-            <p>
+            <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#myCarousel" data-slide-to="1"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="item active">
+                        <h3 class="text-center"><strong>FIA LIMA</strong></h3>
+                        <img src="imagens/Principal/usmp_fia.jpg" alt="" style="width:100%; height: 500px;">
+                    </div>
+                    <div class="item">
+                        <h3 class="text-center"><strong>USMP AREQUIPA</strong></h3>
+                        <img src="imagens/Principal/usmp_arequipa.jpg" alt="" style="width:100%; height: 500px;">
+                    </div>
+                </div>
+                <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
         </div>
     </div>
+
+    <footer>
+        <div class="footer">
+            <div class="row">
+                <div class="col-7">
+                    <div class="row">
+                        <img class="container" src="imagens/Principal/usmp.png" style="width: 65%;">
+                    </div>
+                </div>
+                <div class="col-5 text-start" style="padding-top: 20px;">
+                    <div class="row">
+                        <h4 class="container text-light" >Sede Lima: Jr. Las Calandrias N° 151 – 291 Santa Anita, Lima - Perú</h4>
+                        <h4 class="container text-light" >Sede Arequipa: Calle la Merced 209, Arequipa - Perú</h4>
+                    </div>
+                    <div class="row">
+                        <h5 class="container text-light" >Copyright ©️ 2021 Taller de Proyectos - FIA, USMP </h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
 
     <script type="text/javascript">
         const list = document.querySelectorAll('.list');
