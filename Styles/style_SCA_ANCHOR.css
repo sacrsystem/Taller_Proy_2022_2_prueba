@@ -13,8 +13,9 @@ div.row #integrantes{
     padding-top: 1.5rem;
     padding-bottom: 1.5rem;
 }
-div.row #intro{
+div #intro{
     padding-top: 2rem;
+    margin: 3.5rem;
 }
 div.fotos{
     padding-left: 3rem;
@@ -22,6 +23,25 @@ div.fotos{
 div.herramientas{
     margin-top: 1.5rem;
     margin-bottom: 1.2rem;
+}
+#miembros{
+    margin-top: 4rem;
+}
+a:link{
+    text-decoration: none;
+    color: white;
+}
+a:visited{
+    color: rgb(235, 230, 166);
+}
+a:hover{
+    color: rgb(189, 186, 186);
+}
+a:active{
+    color: rgb(117, 117, 117);
+}
+a:visited.devops{
+    color: #222831;
 }
 
 body {
