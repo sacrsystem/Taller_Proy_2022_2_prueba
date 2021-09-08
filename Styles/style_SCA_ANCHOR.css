@@ -19,7 +19,10 @@ div.row #intro{
 div.fotos{
     padding-left: 3rem;
 }
-
+div.herramientas{
+    margin-top: 1.5rem;
+    margin-bottom: 1.2rem;
+}
 
 body {
     display: flex;
