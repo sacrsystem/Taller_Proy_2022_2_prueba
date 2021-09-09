@@ -25,4 +25,6 @@ window.addEventListener('DOMContentLoaded', event => {
 
 });
 
+
 window.open("https://miro.com/app/board/o9J_l09mz1w=/" , "ventana1" , "width=120,height=300,scrollbars=NO")
+
