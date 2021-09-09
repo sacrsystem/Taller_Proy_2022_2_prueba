@@ -31,6 +31,10 @@ div.fotos{
     margin-top: 1.2rem;
 }
 
+.carousel{
+    width: 60rem;
+    height: 40rem;
+}
 
 /* IDENTIFICADORES DE INTEGRANTES */
 #diego{
