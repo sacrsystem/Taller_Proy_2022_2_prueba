@@ -381,7 +381,7 @@
                 <a class="list-group-item list-group-item-action active" id="list-home-list" data-bs-toggle="list" href="#list-home" role="tab" aria-controls="list-home">Certificados obtenidos</a>
                 <a class="list-group-item list-group-item-action" id="list-profile-list" data-bs-toggle="list" href="#list-profile" role="tab" aria-controls="list-profile">Wiki</a>
                 <a class="list-group-item list-group-item-action" id="list-messages-list" data-bs-toggle="list" href="#list-messages" role="tab" aria-controls="list-messages">Repositorio del Proyecto</a>
-              
+                <a class="list-group-item list-group-item-action" id="list-messages1-list" data-bs-toggle="list" href="#list-messages1" role="tab" aria-controls="list-messages1">Microsoft Planner</a>
               
                 <!--- <a class="list-group-item list-group-item-action" id="list-settings-list" data-bs-toggle="list" href="#list-settings" role="tab" aria-controls="list-settings">Settings</a>-->
               </div>
@@ -406,7 +406,12 @@
               </div>
                 <div class="tab-pane fade" id="list-profile" role="tabpanel" aria-labelledby="list-profile-list"><p class="fst-italic">En nuestra wiki podremos observar cada avance que se hizo durante la creacion del proyecto <a href="https://dev.azure.com/joseoquendo/SC_HUAWEI/_wiki/wikis/SC_HUAWEI.wiki/1/SMART-WEB">"Vease AQUI"</a></p></div>
                 <div class="tab-pane fade" id="list-messages" role="tabpanel" aria-labelledby="list-messages-list"><p class="fst-italic">Aqui podremos encontrar el link de nuestro repositorio de el proyecto Smart Campus en AzureDevOps <a href="https://dev.azure.com/joseoquendo/SC_HUAWEI/_git/pagina-de-avances.git">"Repositorio"</a></p></div>
-               <!---- <div class="tab-pane fade" id="list-settings" role="tabpanel" aria-labelledby="list-settings-list">...</div>-->
+                <div class="tab-pane fade" id="list-messages1" role="tabpanel" aria-labelledby="list-messages1-list"><p class="fst-italic">Aqui podremos encontrar el link de nuestras tareas realizadas en Microsoft Planner <a href="https://tasks.office.com/usmp.pe/es-US/Home/Planner/#/plantaskboard?groupId=fad749c2-3d18-4c8c-a214-b3470e1c2373&planId=k-mmgjtEvE-51W1GF_YHqWQABkdS">"Planner"</a></p></div>
+
+
+
+               
+                <!---- <div class="tab-pane fade" id="list-settings" role="tabpanel" aria-labelledby="list-settings-list">...</div>-->
               </div>
             </div>
           </div>
@@ -530,14 +535,19 @@
       </div>
     </section><!-- End Services Section -->
 
-    <section id="arquitectura" class="arquitectura">
-    <div class="section-title" >
-      <h2>Arquitectura del proyecto</h2>
-      <p>La siguiente imagen muestra la arquitectura de nuestro proyecto SMART CAMPUS</p>
-      <img src="imagens/SC_HUAWEI/arquitecturahua.jpeg" class="border border-3" alt="...">
-    </div>
 
-  </section>
+    <section id="arquitectura" class="arquitectura">
+      <div class="section-title" >
+        <h2>Arquitectura del proyecto</h2>
+        <p>La siguiente imagen muestra la arquitectura de nuestro proyecto SMART CAMPUS</p>
+        <img src="imagens/SC_HUAWEI/arquitectura.png" class="border border-3" alt="...">
+     
+      <h2> descripcion</h2>
+      <p class="parrafo-1">La integración de un Bot de Azure Bot Servicies nos permitira  ayudara a los alumnos y personal administrativo de la USMP -FIA en tramites e información guiada para presentar en las áreas
+        de Registros Académicos y Tesorería, los tramites a completar por parte del Bot o guías brindadas se almacenaran en una base de datos (dentro de Huawei Cloud), donde también existirá una VPC para comunicación con el App Servicies de
+        Azure, que soportara al Bot y se utilizara la conectividad con las funciones para respuesta concreta o envió de solicitud/captura de información. Dando de esta manera a los usuarios conectados mediante una IoT (Tablet con cámara web).</p>
+    </div>
+    </section>
 
       </div>
     </section><!-- End Portfolio Section -->
