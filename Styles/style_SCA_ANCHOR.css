@@ -19,7 +19,28 @@ div #intro{
 }
 div.fotos{
     padding-left: 3rem;
+    display: flex;
+    width: 17rem;
+    height: 20rem;
 }
+.fotos img{
+    border: solid 2px #000;
+    border-radius: 50%;
+    width: 100%;
+    box-shadow: 0 0 25px rgb(114, 112, 112);
+    margin-top: 1.2rem;
+}
+
+
+/* IDENTIFICADORES DE INTEGRANTES */
+#diego{
+    display: block;
+}
+
+
+/* IDENTIFICADORES DE INTEGRANTES */
+
+
 div.herramientas{
     margin-top: 1.5rem;
     margin-bottom: 1.2rem;
@@ -27,6 +48,9 @@ div.herramientas{
 #miembros{
     margin-top: 4rem;
 }
+
+
+/* ENLACES a DE CLASE general */
 a:link{
     text-decoration: none;
     color: white;
@@ -43,6 +67,21 @@ a:active{
 a:visited.devops{
     color: #222831;
 }
+/* ENLACES a DE CLASE general */
+
+
+/* ENLACES a DE CLASE integrantes */
+a.integrantes:link{
+    color: rgba(51, 111, 175, 0.822);
+}
+a.integrantes:visited{
+    color: rgb(126, 154, 156);
+}
+a.integrantes:hover{
+    color: #40495a;
+}
+/* ENLACES a DE CLASE integrantes */
+
 
 body {
     display: flex;
@@ -51,13 +90,6 @@ body {
     height: 100%;
     background-image: url(../imagens/Principal/fondo.png);
     background-attachment: fixed
-}
-
-div.fotos{
-    display: flex;
-    width: 20rem;
-    height: 20rem;
-    
 }
 
 header {
