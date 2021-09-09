@@ -1,96 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>SC_AZURE</title>
- <link rel="stylesheet" href="Styles/style_SC_AZURE/style_SC_AZURE.css">
- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
-<link href="Styles/style_SC_AZURE/bootstrap.css" rel='stylesheet' type='text/css' />
-<link href="Styles/style_SC_AZURE/style.css" rel='stylesheet' type='text/css' />
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
-<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
-<script src="js/SC_AZURE/jquery.min.js"></script>
-<!--<script src="js/jquery.easydropdown.js"></script>-->
-<!--start slider -->
-<link rel="stylesheet" href="Styles/style_SC_AZURE/fwslider.css" media="all">
-<script src="js/SC_AZURE/jquery-ui.min.js"></script>
-<script src="js/SC_AZURE/fwslider.js"></script>
-<!--end slider -->
-<script type="text/javascript">
-        $(document).ready(function() {
-            $(".dropdown img.flag").addClass("flagvisibility");
-
-            $(".dropdown dt a").click(function() {
-                $(".dropdown dd ul").toggle();
-            });
-                        
-            $(".dropdown dd ul li a").click(function() {
-                var text = $(this).html();
-                $(".dropdown dt a span").html(text);
-                $(".dropdown dd ul").hide();
-                $("#result").html("Selected value is: " + getSelectedValue("sample"));
-            });
-                        
-            function getSelectedValue(id) {
-                return $("#" + id).find("dt a span.value").html();
-            }
-
-            $(document).bind('click', function(e) {
-                var $clicked = $(e.target);
-                if (! $clicked.parents().hasClass("dropdown"))
-                    $(".dropdown dd ul").hide();
-            });
-
-
-            $("#flagSwitcher").click(function() {
-                $(".dropdown img.flag").toggleClass("flagvisibility");
-            });
-        });
-     </script>
+    <meta charset="UTF-8">
+    <title>TALLER DE PROCESOS</title>
+    <link rel="stylesheet" href="Styles/style_SC_AZURE/style.css">
+      <link rel="stylesheet" href="Styles/style_SC_AZURE/estilos.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
 </head>
-<body class="row">
-        <div class="header">
-		<div class="container">
-			<div class="row">
-			  <div class="col-md-12">
-				 <div class="header-left">
-					 <div class="logo">
-						<a href="index.html"><img src="imagens/SC_AZURE/logo.png" alt=""/></a>
-					 </div>
-					 <div class="menu">
-						  <a class="toggleMenu" href="#"><img src="imagens/SC_AZURE/nav.png" alt="" /></a>
-						    <ul class="nav" id="nav">
-								<li><a href="index.html">Inicio</a></li>
-						    	<li><a href="team.html">Integrantes</a></li>
-								<li><a href="contact.html">Arquitectura</a></li>		
-														
-								<div class="clear"></div>
-							</ul>
-							<script type="text/javascript" src="js/SC_AZURE/responsive-nav.js"></script>
-				    </div>							
-	    		    <div class="clear"></div>
-	    	    </div>
-	            <div class="header_right">
-	    		  <!-- start search-->
-				      
-						<!----search-scripts---->
-						<script src="js/SC_AZURE/classie.js"></script>
-						<script src="js/SC_AZURE/uisearch.js"></script>
-						<script>
-							new UISearch( document.getElementById( 'sb-search' ) );
-						</script>
-						<!----//search-scripts---->
-				    
-		           <div class="clear"></div>
-	       </div>
-	      </div>
-		 </div>
-	    </div>
-	</div>
 
-<body>
-    
+<body class="row">
+    <header class="justify-content-center" style="padding-right: 0px;">
+        <div class="text-center d-flex align-items-center">
+            <a target="blank" href="https://www.usmp.edu.pe/"><img class="container" src="" style="width: 70%;"></a>
+        </div>
+        <div class="text-center d-flex align-items-center">
+            <h1 class="container text-light" style="font-family: cursive; font-size: 300%;">TALLER DE PROYECTOS SC AZURE</h1>
+        </div>
+    </header>
     <div class="col-2">
         <div class="navigation">
             <ul>
@@ -193,356 +119,310 @@
     </div>
 
 <div class="col-10">
-
-	<div class="banner">
-	<!-- start slider -->
-       <div id="fwslider">
-         <div class="slider_container">
-            <div class="slide"> 
-                <!-- Slide image -->
-               <img src="imagens/SC_AZURE/102.jpg" class="img-responsive" alt=""/>
-                <!-- /Slide image -->
-                <!-- Texts container -->
-                <div class="slide_content">
-                    <div class="slide_content_wrap">
-                        <!-- Text title -->
-						  <h1 class="title"><FONT COLOR="black">SC AZURE  SMART CLASSROOM </FONT></h1>
-						
-                        <!-- /Text title -->
-                        
+    <body>
+    <main>
+        <section class="contenedor sobre-nosotros">
+            <h2 class="titulo">Nuestro proyecto</h2>
+            <div class="contenedor-sobre-nosotros">
+                <img src="imagens/SC_AZURE/logo.jpg" alt="" class="imagen-about-us">
+                <div class="contenido-textos">
+                    <h3><span>1</span>Información</h3>
+                    <p>Modelo de administración estratégica para el desarrollo de un campus inteligente con fundamentos
+                     de Smart City en la universidad de San Martín de Porres de Lima. </p>
+                    <h3><span>2</span>Propósito</h3>
+                    <p>La realización del informe tiene como propósito elaborar un modelo estratégico de un Smart
+                     Campus con conceptos claves de una Smart City aplicando estos concepto y fundamentos en la Universidad San Martin de Porres</p>
+                </div>
+            </div>
+        </section>
+        <section class="portafolio">
+            <div class="contenedor">
+                <h2 class="titulo">Integrantes</h2>
+                <div class="galeria-port">
+                    <div class="imagen-port">
+                        <img src="imagens/SC_AZURE/2.jfif" alt="">
+                        <div class="hover-galeria">
+                            <img src="imagens/SC_AZURE/icono1.png" alt="">
+                            <p>LIDER</p>
+                            <p> Alexander Ayala</p>
+                        </div>
+                    </div>
+                     <div class="imagen-port">
+                        <img src="imagens/SC_AZURE/5.jpg" alt="">
+                        <div class="hover-galeria">
+                            <img src="imagens/SC_AZURE/icono1.png" alt="">
+                            <p>QA</p>
+                            <p> Jhoselyn Karina</p>
+                        </div>
+                    </div>
+                    <div class="imagen-port">
+                        <img src="imagens/SC_AZURE/1.jfif" alt="">
+                        <div class="hover-galeria">
+                            <img src="imagens/SC_AZURE/icono1.png" alt="">
+                             <p>PROGRAMADOR</p>
+                            <p>Diego Enrique</p>
+                        </div>
+                    </div>
+                    <div class="imagen-port">
+                        <img src="imagens/SC_AZURE/3.jfif" alt="">
+                        <div class="hover-galeria">
+                            <img src="imagens/SC_AZURE/icono1.png" alt="">
+                             <p>PROGRAMADOR</p>
+                            <p>Sandro Miguel</p>
+                        </div>
+                    </div>
+                    <div class="imagen-port">
+                        <img src="imagens/SC_AZURE/4.jfif" alt="">
+                        <div class="hover-galeria">
+                            <img src="imagens/SC_AZURE/icono1.png" alt="">
+                             <p>PROGRAMADOR</p>
+                            <p>Neyser Breyner</p>
+                        </div>
+                    </div>
+                    <div class="imagen-port">
+                        <img src="imagens/SC_AZURE/20.jpg" alt="">
+                        <div class="hover-galeria">
+                            <img src="imagens/SC_AZURE/icono1.png" alt="">
+                            <p>PROGRAMADOR</p>
+                            <p>Jorge Rai</p>
+                        </div>
+                    </div>
+                   
+                    <div class="imagen-port">
+                        <img src="imagens/SC_AZURE/6.jpg" alt="">
+                        <div class="hover-galeria">
+                            <img src="imagens/SC_AZURE/icono1.png" alt="">
+                            <p>PROGRAMADOR</p>
+                            <p>Jose Carlos</p>
+                        </div>
+                    </div>
+                   
+                </div>
+            </div>
+        </section>
+       
+        <section class="about-services">
+            <div class="contenedor">
+                <h2 class="titulo">Nuestros servicios</h2>
+                <div class="servicio-cont">
+                    <div class="servicio-ind">
+                        <img src="imagens/SC_AZURE/13.PNG" alt="">
+                        <h3>Chat Bot</h3>
+                        <p>es un programa de inteligencia artificial (IA)
+que puede simular una conversación (o un chat) con un usuario en lenguaje natural a través de aplicaciones de mensajería, sitios web, aplicaciones móviles</p>
+                    </div>
+                    <div class="servicio-ind">
+                        <img src="imagens/SC_AZURE/icono1.png" alt="">
+                        <h3>Azure Services</h3>
+                       <p>Es consciente de que la informática en la nube le ahorrará tiempo y dinero a su compañía al realizar la migración del hardware físico del entorno local a una solución en la nube</p>
+                    </div>
+                    <div class="servicio-ind">
+                        <img src="imagens/SC_AZURE/12.png" alt="">
+                        <h3>Azure Devops</h3>
+                       <p>Server es un producto de Microsoft que proporciona control de versiones, informes, gestión de requisitos, gestión de proyectos, compilaciones automatizadas, pruebas y capacidades de gestión de versiones</p>
                     </div>
                 </div>
-               <!-- /Texts container -->
             </div>
-            <!-- /Duplicate to create more slides -->
-            <div class="slide">
-               <img src="imagens/SC_AZURE/103.jpg" class="img-responsive" alt=""/>
-                <div class="slide_content">
-                    <div class="slide_content_wrap">
-                        <h1 class="title"><FONT COLOR="black">SC AZURE  SMART CLASSROOM </FONT></h1>
+        </section>
+
+    
+        <section class="about-services">
+            <div class="contenedor">
+                <h2 class="titulo">CERTIFICADOS ENTERPRISE PRACTITIONER</h2>
+                <div class="servicio-cont">
+                    <div class="servicio-ind">
+                    <br>
+                        <img src="imagens/SC_AZURE/1.jpeg" alt=""><br>
+                        <br>
                        
+                     
+                    </div>
+                    <div class="servicio-ind">
+                        <img src="imagens/SC_AZURE/2.jpeg" alt="">
+                       
+                     
+                    </div>
+                    <div class="servicio-ind">
+                        <img src="imagens/SC_AZURE/3.jpeg" alt="">
+                     
+             
                     </div>
                 </div>
+
+
+                <div class="servicio-cont">
+                    <div class="servicio-ind">
+                        <img src="imagens/SC_AZURE/201.jpg" alt=""><br>
+                        
+                       
+                     
+                    </div>
+                    <div class="servicio-ind">
+                        <img src="imagens/SC_AZURE/206.jpg" alt="">
+                      
+                     
+                    </div>
+                    <div class="servicio-ind">
+                        <img src="imagens/SC_AZURE/213.jpg" alt="">
+                       
+             
+                    </div>
+                </div>
+
+
+
             </div>
-            <!--/slide -->
+        </section>
+
+        <section class="about-services">
+            <div class="contenedor">
+                <h2 class="titulo">CERTIFICADOS DESING THINKING</h2>
+                <div class="servicio-cont">
+                    <div class="servicio-ind">
+                    <br>
+                        <img src="imagens/SC_AZURE/202.jpg" alt=""><br>
+                        <br>
+                       
+                     
+                    </div>
+                    <div class="servicio-ind">
+                        <img src="imagens/SC_AZURE/204.jpg" alt="">
+                       
+                     
+                    </div>
+                    <div class="servicio-ind">
+                        <img src="imagens/SC_AZURE/207.jpg" alt="">
+                     
+             
+                    </div>
+                </div>
+
+
+                <div class="servicio-cont">
+                    <div class="servicio-ind">
+                        <img src="imagens/SC_AZURE/209.jpg" alt=""><br>
+                        
+                       
+                     
+                    </div>
+                    <div class="servicio-ind">
+                        <img src="imagens/SC_AZURE/211.jpg" alt="">
+                      
+                     
+                    </div>
+                    <div class="servicio-ind">
+                        <img src="imagens/SC_AZURE/2000.jFIF" alt="">
+                       
+             
+                    </div>
+                </div>
+
+
+
+            </div>
+        </section>
+
+
+
+         <section class="about-services">
+            <div class="contenedor">
+                <h2 class="titulo">CERTIFICADOS SCRUM</h2>
+                <div class="servicio-cont">
+                    <div class="servicio-ind">
+                    <br>
+                        <img src="imagens/SC_AZURE/203.jpg" alt=""><br>
+                        <br>
+                       
+                     
+                    </div>
+                    <div class="servicio-ind">
+                        <img src="imagens/SC_AZURE/205.jpg" alt="">
+                       
+                     
+                    </div>
+                    <div class="servicio-ind">
+                        <img src="imagens/SC_AZURE/210.jpg" alt="">
+                     
+             
+                    </div>
+                </div>
+
+
+                <div class="servicio-cont">
+                    <div class="servicio-ind">
+                        <img src="imagens/SC_AZURE/212.jpg" alt=""><br>
+                        
+                       
+                     
+                    </div>
+                    <div class="servicio-ind">
+                        <img src="imagens/SC_AZURE/208.jpg" alt="">
+                      
+                     
+                    </div>
+                    <div class="servicio-ind">
+                        <img src="imagens/SC_AZURE/3000.jFIF" alt="">
+                       
+             
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="contenedor sobre-nosotros">
+            <h2 class="titulo">ARQUITECTURA</h2>
+            <div class="">
+                <img src="imagens/SC_AZURE/500.jpg" alt="" width="800px" heigt="800px">
+                <div class="contenido-textos">
+                    <h3><span>1</span>Información</h3>
+                    <p>El dispositivo IoT se registra de manera segura en la nube mediante IoT Edge.
+IoT Hub cumple la función de puerta de enlace en la nube. Por lo tanto, sirve como un agente intermediario entre el dispositivo y los componentes del back-end.
+La Función de Azure se encarga de transformar los datos luego de pasar por IoT Hub, a JSON para que puedan ser almacenados en Cosmos DB.
+La información se almacena en Cosmos DB como documentos JSON. La información está disponible para el uso del Cliente/Usuario.
+La Función de Azure obtendrá la fecha y hora en la que se almacenó la información y debe verificarse que esta esté en el rango determinado para darse como válido.
+Web App Service compila el aplicativo web, al cual nuestro Cliente/Usuario podrá acceder desde cualquier dispositivo conectado a internet.
+Azure DevOps se encarga de la administración del proyecto, es decir, la administración del código para que pueda ser compilado y lanzado (CI/CD). Su flujo va de la siguiente manera:
+El Programador de Azure Smart FIA realiza modificaciones en el código fuente del app web.
+El código se almacena en un repositorio dentro de Azure Repos.. </p>
+                    <h3><span>2</span>Información</h3>
+                    <p>CI corre pruebas unitarias mediante Azure Test Plans.
+CD se genera mediante el componente Azure Pipelines.
+El código inicial se dirige a la capa de presentación y se implementa mediante Azure Web App Service.
+El Programador puede supervisar y administrar el código cuantas veces lo requiera.
+Para implementar el servicio de chatbot se requiere Azure QnA Maker que permite, con el uso de la inteligencia artificial, responder preguntas del Cliente/Usuario de manera natural y conversacional.
+Azure Language Understanding (LUIS) permite al Cliente/Usuario interactuar con el aplicativo web.
+Azure Bot Service es el servicio que implementará el bot para que se comunique con el Cliente/Usuario dentro del aplicativo.
+Para el análisis, monitoreo y detección de errores en el rendimiento del bot y los demás componentes alojados en la nube se usa Azure App Insights.
+Toda la información necesaria para la programación de estos componentes se almacena en la misma base de datos de Cosmos DB.
+El chatbot implementado se ejecuta en Web App Service en donde interactúa con el Cliente/Usuario.</p>
+                </div>
+            </div>
+        </section>
+
+
+
+
+    </main>
+    <footer>
+        <div class="contenedor-footer">
+            <div class="content-foo">
+                <h4>Telefono</h4>
+                <p>914238421</p>
+            </div>
+            <div class="content-foo">
+                <h4>Email</h4>
+                <p>Usmp@gmail.com</p>
+            </div>
+            <div class="content-foo">
+                <h4>Ubicanos</h4>
+                <p>Universidad San Martin De Porres</p>
+            </div>
         </div>
-        <div class="timers"></div>
-        <div class="slidePrev"><span></span></div>
-        <div class="slideNext"><span></span></div>
-       </div>
-       <!--/slider -->
-      </div>
-	  <div class="features">
-		<div class="container">
-			<h3 class="m_3">CERTIFICADOS</h3>
-			<div class="close_but"><i class="close1"> </i></div>
-			  <div class="row">
-				<div class="col-md-3 top_box">
-				  <div class="view view-ninth"><a href="single.html">
-                    <img src="imagens/SC_AZURE/2.jpeg" class="img-responsive" alt=""/>
-                    <div class="mask mask-1"> </div>
-                    <div class="mask mask-2"> </div>
-                      <div class="content">
-                        <h2>IBM</h2>
-                        <p>JOSE CARLOS FLORES APAZA</p>
-                      </div>
-                   </a> </div
-                  </div>
-                </div>
-                <div class="col-md-3 top_box">
-					<div class="view view-ninth"><a href="single.html">
-                    <img src="imagens/SC_AZURE/3.jpeg" class="img-responsive" alt=""/>
-                    <div class="mask mask-1"> </div>
-                    <div class="mask mask-2"> </div>
-                      <div class="content">
-                        <h2>IBM</h2>
-                        <p>DIEGO ENRIQUE QUISPE PARIZACA</p>
-                      </div>
-                    </a> </div>
-				</div>
-				<div class="col-md-3 top_box">
-					<div class="view view-ninth"><a href="single.html">
-                    <img src="imagens/SC_AZURE/201.jpg" class="img-responsive" alt=""/>
-                    <div class="mask mask-1"> </div>
-                    <div class="mask mask-2"> </div>
-                      <div class="content">
-                        <h2>IBM</h2>
-                        <p>GIANCARLO ALEXANDER AYALA CARDENAS</p>
-                      </div>
-                    </a> </div>
-				</div>
-				<div class="col-md-3 top_box1">
-					<div class="view view-ninth"><a href="single.html">
-                    <img src="imagens/SC_AZURE/206.jpg" class="img-responsive" alt=""/>
-                    <div class="mask mask-1"> </div>
-                    <div class="mask mask-2"> </div>
-                      <div class="content">
-                        <h2>IBM</h2>
-                        <p>SANDRO MIGUEL BALDERO QUISPE</p>
-                      </div>
-                     </a> </div>
-				</div>
-                <div class="col-md-3 top_box1">
-					<div class="view view-ninth"><a href="single.html">
-                    <img src="imagens/SC_AZURE/213.jpg" class="img-responsive" alt=""/>
-                    <div class="mask mask-1"> </div>
-                    <div class="mask mask-2"> </div>
-                      <div class="content">
-                        <h2>IBM</h2>
-                        <p>NEYSER BREYNER TACANGA GUTIERREZ</p>
-                      </div>
-                     </a> </div>
-				</div>
-                <div class="col-md-3 top_box1">
-					<div class="view view-ninth"><a href="single.html">
-                    <img src="imagens/SC_AZURE/202.jpg" class="img-responsive" alt=""/>
-                    <div class="mask mask-1"> </div>
-                    <div class="mask mask-2"> </div>
-                      <div class="content">
-                       <h2>Desing Thinking</h2>
-                        <p>GIANCARLO ALEXANDER AYALA CARDENAS</p>
-                        <p></p>
-                      </div>
-                     </a> </div>
-				</div>
-                <div class="col-md-3 top_box1">
-					<div class="view view-ninth"><a href="single.html">
-                    <img src="imagens/SC_AZURE/204.jpg" class="img-responsive" alt=""/>
-                    <div class="mask mask-1"> </div>
-                    <div class="mask mask-2"> </div>
-                      <div class="content">
-                       <h2>Desing Thinking</h2>
-                       <p>SANDRO MIGUEL BALDERO QUISPE</p>
-                        <p></p>
-                      </div>
-                     </a> </div>
-				</div>
-                 <div class="col-md-3 top_box1">
-					<div class="view view-ninth"><a href="single.html">
-                    <img src="imagens/SC_AZURE/207.jpg" class="img-responsive" alt=""/>
-                    <div class="mask mask-1"> </div>
-                    <div class="mask mask-2"> </div>
-                      <div class="content">
-                       <h2>Desing Thinking</h2>
-                        <p>JOSE CARLOS FLORES APAZA</p>
-                        <p></p>
-                      </div>
-                     </a> </div>
-				</div>
-                 <div class="col-md-3 top_box1">
-					<div class="view view-ninth"><a href="single.html">
-                    <img src="imagens/SC_AZURE/209.jpg" class="img-responsive" alt=""/>
-                    <div class="mask mask-1"> </div>
-                    <div class="mask mask-2"> </div>
-                      <div class="content">
-                        <h2>Desing Thinking</h2>
-                         <p>DIEGO ENRIQUE QUISPE PARIZACA</p>
-                        <p></p>
-                      </div>
-                     </a> </div>
-				</div>
-                 <div class="col-md-3 top_box1">
-					<div class="view view-ninth"><a href="single.html">
-                    <img src="imagens/SC_AZURE/211.jpg" class="img-responsive" alt=""/>
-                    <div class="mask mask-1"> </div>
-                    <div class="mask mask-2"> </div>
-                      <div class="content">
-                        <h2>Desing Thinking</h2>
-                         <p>NEYSER BREYNER TACANGA GUTIERREZ</p>
-                        <p></p>
-                      </div>
-                     </a> </div>
-				</div>
-                 <div class="col-md-3 top_box1">
-					<div class="view view-ninth"><a href="single.html">
-                    <img src="imagens/SC_AZURE/204.jpg" class="img-responsive" alt=""/>
-                    <div class="mask mask-1"> </div>
-                    <div class="mask mask-2"> </div>
-                      <div class="content">
-                         <h2>Desing Thinking</h2>
-                          <p>SANDRO MIGUEL BALDERO QUISPE</p>
-                        <p></p>
-                      </div>
-                     </a> </div>
-				</div>
-                 <div class="col-md-3 top_box1">
-					<div class="view view-ninth"><a href="single.html">
-                    <img src="imagens/SC_AZURE/205.jpg" class="img-responsive" alt=""/>
-                    <div class="mask mask-1"> </div>
-                    <div class="mask mask-2"> </div>
-                      <div class="content">
-                        <h2>Scrum</h2>
-                         <p>SANDRO MIGUEL BALDERO QUISPE</p>
-                        <p></p>
-                      </div>
-                     </a> </div>
-				</div>
-                 <div class="col-md-3 top_box1">
-					<div class="view view-ninth"><a href="single.html">
-                    <img src="imagens/SC_AZURE/208.jpg" class="img-responsive" alt=""/>
-                    <div class="mask mask-1"> </div>
-                    <div class="mask mask-2"> </div>
-                      <div class="content">
-                         <h2>Scrum</h2>
-                         <p>JOSE CARLOS FLORES APAZA</p>
-                        <p></p>
-                      </div>
-                     </a> </div>
-				</div>
-                 <div class="col-md-3 top_box1">
-					<div class="view view-ninth"><a href="single.html">
-                    <img src="imagens/SC_AZURE/210.jpg" class="img-responsive" alt=""/>
-                    <div class="mask mask-1"> </div>
-                    <div class="mask mask-2"> </div>
-                      <div class="content">
-                        <h2>Scrum</h2>
-                        <p>DIEGO ENRIQUE QUISPE PARIZACA</p>
-                        <p></p>
-                      </div>
-                     </a> </div>
-				</div>
-                 <div class="col-md-3 top_box1">
-					<div class="view view-ninth"><a href="single.html">
-                    <img src="imagens/SC_AZURE/203.jpg" class="img-responsive" alt=""/>
-                    <div class="mask mask-1"> </div>
-                    <div class="mask mask-2"> </div>
-                      <div class="content">
-                         <h2>Scrum</h2>
-                         <p>GIANCARLO ALEXANDER AYALA CARDENAS</p>
-                        <p></p>
-                      </div>
-                     </a> </div>
-				</div>
-                 <div class="col-md-3 top_box1">
-					<div class="view view-ninth"><a href="single.html">
-                    <img src="imagens/SC_AZURE/212.jpg" class="img-responsive" alt=""/>
-                    <div class="mask mask-1"> </div>
-                    <div class="mask mask-2"> </div>
-                      <div class="content">
-                         <h2>Scrum</h2>
-                         <p>NEYSER BREYNER TACANGA GUTIERREZ</p>
-                        <p></p>
-                      </div>
-                     </a> </div>
+        <h2 class="titulo-final">&copy; SC AZURE</h2>
+    </footer>
+</body>
 
-			</div>
-		 </div>
-	    </div>
-	<div class="content-bottom">
-		<div class="container">
-			<div class="row content_bottom-text">
-			  <div class="col-md-7">
-			  <h3><FONT COLOR="black">Nuestro Proyecto </FONT></h3>
-			
-				<h4 class="m_1">Modelo de administración estratégica para el desarrollo de un campus inteligente con fundamentos de Smart City en la universidad de San Martín de Porres de Lima.</h4>
-				<h4 class="m_2">La realización del informe tiene como propósito elaborar un modelo estratégico de un Smart Campus con conceptos claves de una Smart City aplicando estos concepto y fundamentos en la Universidad San Martin de Porres.</h4>
-                <h4 class="m_2">Implementar el lector biométrico de huella dactilar para controlar la
-asistencia de los estudiantes de la Universidad San Martin de Porres</h4>
-                <h4 class="m_2">Optimizar la asistencia de los estudiantes de la  Universidad San Martin de Porres.</h4>
-                <h4 class="m_2">Reducir el tiempo que toma el docente al controlar las asistencias de
-los estudiantesde de la  Universidad San Martin de Porres.</h4>
-			  </div>
-			</div>
-		</div>
-	</div>
-	<div class="features">
-		<div class="container">
-			<h3 class="m_3">SERVICIOS</h3>
-			<div class="close_but"><i class="close1"> </i></div>
-			  <div class="row">
-				<div class="col-md-3 top_box">
-				  <div class="view view-ninth"><a href="single.html">
-                    <img src="imagens/SC_AZURE/320.png" class="img-responsive" alt=""/>
-                    <div class="mask mask-1"> </div>
-                    <div class="mask mask-2"> </div>
-                      <div class="content">
-                        <h2>Chat Bot</h2>
-                        <p>.</p>
-                      </div>
-                   </a> </div
-                  </div>
-                  <h4 class="m_4"><a href="#">Chat Bot</a></h4>
-                  <p class="m_5">es un programa de inteligencia artificial (IA) que puede simular una conversación (o un chat) con un usuario en lenguaje natural a través de aplicaciones de mensajería, sitios web, aplicaciones móviles</p>
-                </div>
-                <div class="col-md-3 top_box">
-					<div class="view view-ninth"><a href="single.html">
-                    <img src="imagens/SC_AZURE/icono1.png" class="img-responsive" alt=""/>
-                    <div class="mask mask-1"> </div>
-                    <div class="mask mask-2"> </div>
-                      <div class="content">
-                        <h2>Azure Services</h2>
-                        <p></p>
-                      </div>
-                    </a> </div>
-                   <h4 class="m_4"><a href="#">Azure Services</a></h4>
-                   <p class="m_5">Es consciente de que la informática en la nube le ahorrará tiempo y dinero a su compañía al realizar la migración del hardware físico del entorno local a una solución en la nube</p>
-				</div>
-				<div class="col-md-3 top_box">
-					<div class="view view-ninth"><a href="single.html">
-                    <img src="imagens/SC_AZURE/12.png" class="img-responsive" alt=""/>
-                    <div class="mask mask-1"> </div>
-                    <div class="mask mask-2"> </div>
-                      <div class="content">
-                        <h2>Azure Devops</h2>
-                        <p>.</p>
-                      </div>
-                    </a> </div>
-                   <h4 class="m_4"><a href="#">Azure Devops</a></h4>
-                   <p class="m_5">Server es un producto de Microsoft que proporciona control de versiones, informes, gestión de requisitos, gestión de proyectos, compilaciones automatizadas, pruebas y capacidades de gestión de versiones</p>
-				</div>
-				<div class="col-md-3 top_box1">
-					<div class="view view-ninth"><a href="single.html">
-                    <img src="imagens/SC_AZURE/99.png" class="img-responsive" alt=""/>
-                    <div class="mask mask-1"> </div>
-                    <div class="mask mask-2"> </div>
-                      <div class="content">
-                        <h2>Zotero</h2>
-                        <p></p>
-                      </div>
-                     </a> </div>
-                   <h4 class="m_4"><a href="#">Zotero</a></h4>
-                   <p class="m_5">Zotero es un gestor de referencias bibliográficas, libre, abierto y gratuito desarrollado por el Center for History and New Media de la Universidad George Mason que funciona también como servicio. Es un programa multiplataforma.</p>
-				</div>
-			</div>
-		 </div>
-	    </div>
-			  <div class="footer">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-3">
-						<ul class="footer_box">
-							<h4>TELEFONO</h4>
-							<li><a href="#">914238421</a></li>
-							
-						</ul>
-					</div>
-					<div class="col-md-3">
-						<ul class="footer_box">
-							<h4>EMAIL</h4>
-							<li><a href="#">usmp@gmail.com</a></li>
-						
-						</ul>
-					</div>
-					<div class="col-md-3">
-						<ul class="footer_box">
-							<h4>Ubicanos</h4>
-							<li><a href="#">Universidad San Martin De Porres</a></li>
-
-						</ul>
-					</div>
-					
-		   					
-						</ul>
-					</div>
-				</div>
-				<div class="row footer_bottom">
-				    <div class="copy">
-			           <p>© SC AZURE - 2021 - TALLER DE PROYECTOS <a href="https://www.usmp.edu.pe/" target="_blank">USMP</a></p>
-		            </div>
-					  
-   				</div>
-			</div>
-		</div>
 
     <script type="text/javascript">
         const list = document.querySelectorAll('.list');
@@ -562,3 +442,5 @@ los estudiantesde de la  Universidad San Martin de Porres.</h4>
     
 </body>
 </html>
+
+
