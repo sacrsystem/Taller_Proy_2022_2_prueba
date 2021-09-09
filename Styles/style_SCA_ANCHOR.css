@@ -35,6 +35,10 @@ div.fotos{
     width: 60rem;
     height: 40rem;
 }
+.subtitulos-carrusel{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
 
 /* IDENTIFICADORES DE INTEGRANTES */
 #diego{
