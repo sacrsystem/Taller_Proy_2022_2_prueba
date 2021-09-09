@@ -21,7 +21,7 @@
     z-index: 10;
 }
 #fwslider .slidePrev span {
-	background-image: url("../imagens/SC_AZURE/img-sprite.png");
+	background-image: url("../images/img-sprite.png");
 	width: 72px;
 	height: 128px;
 	float: left;
@@ -36,7 +36,7 @@
    	z-index: 10;
 }
 #fwslider .slideNext span {
- 	background-image: url("../imagens/SC_AZURE/img-sprite.png");
+ 	background-image: url("../images/img-sprite.png");
 	width: 72px;
 	height: 128px;
 	float: left;

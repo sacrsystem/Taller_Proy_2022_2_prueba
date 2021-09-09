@@ -1,0 +1,186 @@
+<!--A Design by W3layouts
+Author: W3layout
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>SC_AZURE</title>
+<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+<link href="Styles/style_SC_AZURE//style.css" rel='stylesheet' type='text/css' />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<script src="js/SC_AZURE/jquery.min.js"></script>
+<script type="text/javascript">
+        $(document).ready(function() {
+            $(".dropdown img.flag").addClass("flagvisibility");
+
+            $(".dropdown dt a").click(function() {
+                $(".dropdown dd ul").toggle();
+            });
+                        
+            $(".dropdown dd ul li a").click(function() {
+                var text = $(this).html();
+                $(".dropdown dt a span").html(text);
+                $(".dropdown dd ul").hide();
+                $("#result").html("Selected value is: " + getSelectedValue("sample"));
+            });
+                        
+            function getSelectedValue(id) {
+                return $("#" + id).find("dt a span.value").html();
+            }
+
+            $(document).bind('click', function(e) {
+                var $clicked = $(e.target);
+                if (! $clicked.parents().hasClass("dropdown"))
+                    $(".dropdown dd ul").hide();
+            });
+
+
+            $("#flagSwitcher").click(function() {
+                $(".dropdown img.flag").toggleClass("flagvisibility");
+            });
+        });
+     </script>
+ </head>
+<body>
+	<div class="header">
+		<div class="container">
+			<div class="row">
+			  <div class="col-md-12">
+				 <div class="header-left">
+					 <div class="logo">
+						<a href="index.html"><img src="imagens/SC_AZURE/logo.png" alt=""/></a>
+					 </div>
+					 <div class="menu">
+						  <a class="toggleMenu" href="#"><img src="imagens/SC_AZURE/nav.png" alt="" /></a>
+						    <ul class="nav" id="nav">
+						    	<li><a href="index.html">Inicio</a></li>
+						    	<li><a href="team.html">Integrantes</a></li>
+								<li><a href="contact.html">ARQUITECTURA</a></li>		
+														
+								<div class="clear"></div>
+							</ul>
+							<script type="text/javascript" src="js/responsive-nav.js"></script>
+				    </div>							
+	    		    <div class="clear"></div>
+	    	    </div>
+	            <div class="header_right">
+	    		  <!-- start search-->
+				   <div class="search-box">
+							<div id="sb-search" class="sb-search">
+								<form>
+									<input class="sb-search-input" placeholder="Enter your search term..." type="search" name="search" id="search">
+									<input class="sb-search-submit" type="submit" value="">
+									<span class="sb-icon-search"> </span>
+								</form>
+							</div>
+						</div>
+						<!----search-scripts---->
+						<script src="js/SC_AZURE/classie.js"></script>
+						<script src="js/SC_AZURE/uisearch.js"></script>
+						<script>
+							new UISearch( document.getElementById( 'sb-search' ) );
+						</script>
+
+		        <div class="clear"></div>
+	       </div>
+	      </div>
+		 </div>
+	    </div>
+	  </div>
+     <div class="main">
+      <div class="shop_top">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-7">
+				  <div class="map">
+					<img width="100%" height="550" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="imagens/SC_AZURE/500.jpg"></a></small>
+				  </div>
+				</div>
+				<div class="col-md-5">
+					<h1 class="title"><FONT COLOR="black">ARQUITECTURA BÁSICA DE AZURE v1.2.0</FONT></h1>
+El dispositivo IoT se registra de manera segura en la nube mediante IoT Edge.<br>
+IoT Hub cumple la función de puerta de enlace en la nube. Por lo tanto, sirve<br> 
+como un agente intermediario entre el dispositivo y los componentes del back-end.<br>
+La Función de Azure se encarga de transformar los datos luego de pasar por IoT Hub,<br>
+ a JSON para que puedan ser almacenados en Cosmos DB.<br>
+La información se almacena en Cosmos DB como documentos JSON. La información está disponible para el uso del Cliente/Usuario.
+La Función de Azure obtendrá la fecha y hora en la que se almacenó la información y debe verificarse que esta esté en el rango determinado para darse como válido.
+Web App Service compila el aplicativo web, al cual nuestro Cliente/Usuario podrá acceder desde cualquier dispositivo conectado a internet.
+Azure DevOps se encarga de la administración del proyecto, es decir, la administración del código para que pueda ser compilado y lanzado (CI/CD). Su flujo va de la siguiente manera:
+El Programador de Azure Smart FIA realiza modificaciones en el código fuente del app web.
+El código se almacena en un repositorio dentro de Azure Repos.
+CI corre pruebas unitarias mediante Azure Test Plans.
+CD se genera mediante el componente Azure Pipelines.
+El código inicial se dirige a la capa de presentación y se implementa mediante Azure Web App Service.
+El Programador puede supervisar y administrar el código cuantas veces lo requiera.
+Para implementar el servicio de chatbot se requiere Azure QnA Maker que permite, con el uso de la inteligencia artificial, responder preguntas del Cliente/Usuario de manera natural y conversacional.
+Azure Language Understanding (LUIS) permite al Cliente/Usuario interactuar con el aplicativo web.
+Azure Bot Service es el servicio que implementará el bot para que se comunique con el Cliente/Usuario dentro del aplicativo.
+Para el análisis, monitoreo y detección de errores en el rendimiento del bot y los demás componentes alojados en la nube se usa Azure App Insights.
+Toda la información necesaria para la programación de estos componentes se almacena en la misma base de datos de Cosmos DB.
+El chatbot implementado se ejecuta en Web App Service en donde interactúa con el Cliente/Usuario.</p>
+					
+			</div>
+	     </div>
+	   </div>
+	  </div>
+	  	  <div class="footer">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-3">
+						<ul class="footer_box">
+							<h4>TELEFONO</h4>
+							<li><a href="#">914238421</a></li>
+							
+						</ul>
+					</div>
+					<div class="col-md-3">
+						<ul class="footer_box">
+							<h4>EMAIL</h4>
+							<li><a href="#">usmp@gmail.com</a></li>
+						
+						</ul>
+					</div>
+					<div class="col-md-3">
+						<ul class="footer_box">
+							<h4>Ubicanos</h4>
+							<li><a href="#">Universidad San Martin De Porres</a></li>
+
+						</ul>
+					</div>
+					<div class="col-md-3">
+						<ul class="footer_box">
+							<h4>Zzzzz</h4>
+							<div class="footer_search">
+				    		   <form>
+				    			<input type="text" value="Enter your email" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Enter your email';}">
+				    			<input type="submit" value="Go">
+				    		   </form>
+					        </div>
+							<ul class="social">	
+							  <li class="facebook"><a href="#"><span> </span></a></li>
+							  <li class="twitter"><a href="#"><span> </span></a></li>
+							  <li class="instagram"><a href="#"><span> </span></a></li>	
+							  <li class="pinterest"><a href="#"><span> </span></a></li>	
+							  <li class="youtube"><a href="#"><span> </span></a></li>										  				
+						    </ul>
+		   					
+						</ul>
+					</div>
+				</div>
+				<div class="row footer_bottom">
+				    <div class="copy">
+			           <p>© SC AZURE - 2021 - TALLER DE PROYECTOS <a href="https://www.usmp.edu.pe/" target="_blank">USMP</a></p>
+		            </div>
+					  
+   				</div>
+			</div>
+		</div>
+</body>	
+</html>
