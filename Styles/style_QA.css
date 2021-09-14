@@ -92,3 +92,54 @@ header {
     line-height: 60px;
     white-space: nowrap;
 }
+
+.integrantes{
+    color: #000000;
+    padding: 40px 0;
+    text-align: center;
+}
+.integrante{
+    width:32%;
+    display: inline-block;
+    font-size: 16px;
+    border: 1px solid #000000;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    box-shadow: 5px 5px 5px 1px rgba(12, 151, 66, 0.822);
+}
+.integrante img{
+    width: 40%;
+    height: 200px;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+@media only screen and (max-width : 500px){
+    section{
+        padding: 25px 0 15px 0;
+    }
+    .integrante{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: left;
+        margin: 0 0 10px 0;
+        font-size: 12px;
+    }
+    .integrante img{
+        width: 20%;
+        height: 20%;
+    }
+}
+
+.tabla{
+	border: 3px solid black;
+	border-color: #050505;
+	background-color: white;
+}
+.titulos{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+    font-weight: 400;
+    
+}
