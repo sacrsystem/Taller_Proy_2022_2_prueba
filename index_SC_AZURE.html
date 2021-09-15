@@ -139,14 +139,7 @@
             <div class="contenedor">
                 <h2 class="titulo">Integrantes</h2>
                 <div class="galeria-port">
-                    <div class="imagen-port">
-                        <img src="imagens/SC_AZURE/2.jfif" alt="">
-                        <div class="hover-galeria">
-                            <img src="imagens/SC_AZURE/icono1.png" alt="">
-                            <p>LIDER</p>
-                            <p> Alexander Ayala</p>
-                        </div>
-                    </div>
+                   
                      <div class="imagen-port">
                         <img src="imagens/SC_AZURE/5.jpg" alt="">
                         <div class="hover-galeria">
@@ -373,40 +366,41 @@ que puede simular una conversación (o un chat) con un usuario en lenguaje natur
              
                     </div>
                 </div>
-
             </div>
         </section>
 
-        <section class="contenedor sobre-nosotros">
-            <h2 class="titulo">ARQUITECTURA</h2>
-            <div class="">
-                <img src="imagens/SC_AZURE/500.jpg" alt="" width="800px" heigt="800px">
-                <div class="contenido-textos">
-                    <h3><span>1</span>Información</h3>
-                    <p>El dispositivo IoT se registra de manera segura en la nube mediante IoT Edge.
-IoT Hub cumple la función de puerta de enlace en la nube. Por lo tanto, sirve como un agente intermediario entre el dispositivo y los componentes del back-end.
-La Función de Azure se encarga de transformar los datos luego de pasar por IoT Hub, a JSON para que puedan ser almacenados en Cosmos DB.
-La información se almacena en Cosmos DB como documentos JSON. La información está disponible para el uso del Cliente/Usuario.
-La Función de Azure obtendrá la fecha y hora en la que se almacenó la información y debe verificarse que esta esté en el rango determinado para darse como válido.
-Web App Service compila el aplicativo web, al cual nuestro Cliente/Usuario podrá acceder desde cualquier dispositivo conectado a internet.
-Azure DevOps se encarga de la administración del proyecto, es decir, la administración del código para que pueda ser compilado y lanzado (CI/CD). Su flujo va de la siguiente manera:
-El Programador de Azure Smart FIA realiza modificaciones en el código fuente del app web.
-El código se almacena en un repositorio dentro de Azure Repos.. </p>
-                    <h3><span>2</span>Información</h3>
-                    <p>CI corre pruebas unitarias mediante Azure Test Plans.
-CD se genera mediante el componente Azure Pipelines.
-El código inicial se dirige a la capa de presentación y se implementa mediante Azure Web App Service.
-El Programador puede supervisar y administrar el código cuantas veces lo requiera.
-Para implementar el servicio de chatbot se requiere Azure QnA Maker que permite, con el uso de la inteligencia artificial, responder preguntas del Cliente/Usuario de manera natural y conversacional.
-Azure Language Understanding (LUIS) permite al Cliente/Usuario interactuar con el aplicativo web.
-Azure Bot Service es el servicio que implementará el bot para que se comunique con el Cliente/Usuario dentro del aplicativo.
-Para el análisis, monitoreo y detección de errores en el rendimiento del bot y los demás componentes alojados en la nube se usa Azure App Insights.
-Toda la información necesaria para la programación de estos componentes se almacena en la misma base de datos de Cosmos DB.
-El chatbot implementado se ejecuta en Web App Service en donde interactúa con el Cliente/Usuario.</p>
+            
+            <section class="contenedor sobre-nosotros">
+                <h2 class="titulo">Arquitectura</h2>
+                <div class="contenedor-sobre-nosotros">
+                    <img src="imagens/SC_AZURE/500.jpg" alt="" >
+                    <div class="contenido-textos">
+                        <h3><span>1</span>Información</h3>
+                        <p>El dispositivo IoT se registra de manera segura en la nube mediante IoT Edge.
+                            IoT Hub cumple la función de puerta de enlace en la nube. Por lo tanto, sirve como un agente intermediario entre el dispositivo y los componentes del back-end.
+                            La Función de Azure se encarga de transformar los datos luego de pasar por IoT Hub, a JSON para que puedan ser almacenados en Cosmos DB.
+                            La información se almacena en Cosmos DB como documentos JSON. La información está disponible para el uso del Cliente/Usuario.
+                            La Función de Azure obtendrá la fecha y hora en la que se almacenó la información y debe verificarse que esta esté en el rango determinado para darse como válido.
+                            Web App Service compila el aplicativo web, al cual nuestro Cliente/Usuario podrá acceder desde cualquier dispositivo conectado a internet.
+                            Azure DevOps se encarga de la administración del proyecto, es decir, la administración del código para que pueda ser compilado y lanzado (CI/CD). Su flujo va de la siguiente manera:
+                            El Programador de Azure Smart FIA realiza modificaciones en el código fuente del app web.
+                            El código se almacena en un repositorio dentro de Azure Repos.. </p>
+                        <h3><span>2</span>Información</h3>
+                        <p>CI corre pruebas unitarias mediante Azure Test Plans.
+                            CD se genera mediante el componente Azure Pipelines.
+                            El código inicial se dirige a la capa de presentación y se implementa mediante Azure Web App Service.
+                            El Programador puede supervisar y administrar el código cuantas veces lo requiera.
+                            Para implementar el servicio de chatbot se requiere Azure QnA Maker que permite, con el uso de la inteligencia artificial, responder preguntas del Cliente/Usuario de manera natural y conversacional.
+                            Azure Language Understanding (LUIS) permite al Cliente/Usuario interactuar con el aplicativo web.
+                            Azure Bot Service es el servicio que implementará el bot para que se comunique con el Cliente/Usuario dentro del aplicativo.
+                            Para el análisis, monitoreo y detección de errores en el rendimiento del bot y los demás componentes alojados en la nube se usa Azure App Insights.
+                            Toda la información necesaria para la programación de estos componentes se almacena en la misma base de datos de Cosmos DB.
+                            El chatbot implementado se ejecuta en Web App Service en donde interactúa con el Cliente/Usuario.</p>
+                    </div>
                 </div>
-            </div>
-        </section>
+            </section>
 
+  
 
 
 
