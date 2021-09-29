@@ -5,7 +5,9 @@
     <title>TALLER DE PROCESOS</title>
     <link rel="stylesheet" href="Styles/style_SC_GOOGLE.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
-    
+
+    <script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="js/jquery.elevateZoom-3.0.8.min.js"></script>
 </head>
 
 <body class="row">
@@ -172,6 +174,8 @@
                 
     </div>
     
+    
+
     <div class="album py-5 bg-light">
         <div class="container">
             <h2 class="text-center team-text mb-5">TEAM</h2>
@@ -273,69 +277,63 @@
 
         </div>
     </div>    
-        <section class="servicio py-5">
+
             <h2 class="text-center team-text mb-5">Nuestros Servicios</h2>
-            <div class="row mx-auto justify-content-center align-items-center text-center">
-                <div class="one col-lg-3 col-md-4 col-12 w-25">
-                    <img class="img-fluid w-75" src="imagens/SC_GOOGLE/cloud-icon.png" alt="">
-                    <h5>Google Cloud Platform</h5>
-                    <p></p>
+            <div class="row mx-auto justify-content-center align-items-center text-center col-5">
+                <div class="col-md-10 col-sm-6 col-xs-12">
+            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                <div class="row">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="imagens/SC_GOOGLE/cloud-icon.png" class="d-block w-100" alt="...">
+                    <h3 style="color:black">Google Cloud</h3>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="imagens/SC_GOOGLE/azure-devops.png" class="d-block w-100" alt="...">
+                    <h3 style="color:black">Azure DevOps</h3>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="imagens/SC_GOOGLE/Dialog-Flow-Enterprise-Edition.png" class="d-block w-100" alt="...">
+                    <h3 style="color:black">Chatbot - Dialogflow Enterprise</h3>
+                  </div>
                 </div>
-
-                <div class="one col-lg-3 col-md-4 col-12 w-25">
-                    <img class="img-fluid w-75" src="imagens/SC_GOOGLE/azure-devops.png" alt="">
-                    <h5>Azure Devops</h5>
-                    <p></p>
-                </div>
-
-                <div class="one col-lg-3 col-md-4 col-12 w-25">
-                    <img class="img-fluid w-75" src="imagens/SC_GOOGLE/Dialog-Flow-Enterprise-Edition.png" alt="">
-                    <h5>Chatbot - Dialogflow Enterprise</h5>
-                    <p></p>
-                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+               </div>
+               </div>
+               </div>
             </div>
-        </section>
 
-        <section class="servicio py-5">
-            <h2 class="text-center team-text mb-5">Diseño de Arquitectura</h2>
-            <div class="row mx-auto justify-content-center align-items-center text-center">
-                <div class="one col-12 w-100">
-                    <img class="img-fluid w-75" src="imagens/SC_GOOGLE/Diseño de Arquitectura v3.jpg" alt="">
-                    <p></p>
+            <div class="row mx-auto justify-content-center align-items-center text-center ">
+                <div class="item">
+                    <h2 class="text-center team-text mb-5">Diseño de Arquitectura</h2>
+                    <img src="imagens/SC_GOOGLE/Diseño de Arquitectura v3.jpg" alt="" class="imagen" data="imagens/SC_GOOGLE/Diseño de Arquitectura v3.jpg">
                 </div>
-            </div>
-        </section>
-
-        <section class="servicio py-5">
-            <h2 class="text-center team-text mb-5">Mapa de Impacto</h2>
-            <div class="row mx-auto justify-content-center align-items-center text-center">
-                <div class="one col-12 w-100">
+                <div class="item">
+                    <h2 class="text-center team-text mb-5">Mapa de Impacto</h2>
                     <p>Este es el mapa de impacto donde detallamos el objetivo del proyecto y a que usuarios
                         afectaria</p>
-                    <img class="img-fluid w-75" src="imagens/SC_GOOGLE/Mapa de Impacto.jpg" alt="">
-                    
+                    <img src="imagens/SC_GOOGLE/Mapa de Impacto.jpg" alt="" class="imagen" data="imagens/SC_GOOGLE/Mapa de Impacto.jpg">
                 </div>
-            </div>
-        </section>
-
-        <section class="servicio py-5">
-            <h2 class="text-center team-text mb-5">Mapeo de Historia de Usuario</h2>
-            <div class="row mx-auto justify-content-center align-items-center text-center">
-                <div class="one col-12 w-100">
+                <div class="item">
+                    <h2 class="text-center team-text mb-5">Mapeo de Historias de Usuario</h2>
                     <p>Este es el mapeo de historias de usuario donde se ven las épicas y las historias de usuario a desarrollarse durante el proyecto. </p>
-                    <img class="img-fluid w-75" src="imagens/SC_GOOGLE/Mapeo de historias de usuario.jpg" alt="">
-                    
-                </div>
-            </div>
-        </section>
-
-        
-
-    
-
-
-
-    
+                    <img src="imagens/SC_GOOGLE/Mapeo de historias de usuario.jpg" alt="" class="imagen" data="imagens/SC_GOOGLE/Mapeo de historias de usuario.jpg">
+                </div>   
+                <div class="item">
+                    <h2 class="text-center team-text mb-5">Modelo Entidad Relacion</h2>
+                    <p>Se realizó el modelo en la herramienta Draw.io
+                        Como proceso de creación se tomo referencias de las interfaces creadas en Figma
+                        Se realizó el proceso de normalización para la creación de las tablas y sus campos</p>
+                    <img src="imagens/SC_GOOGLE/entidad relacion.PNG" alt="" class="imagen" data="imagens/SC_GOOGLE/entidad relacion.PNG">
+                </div>             
+            </div>   
 
     <script type="text/javascript">
         const list = document.querySelectorAll('.list');
@@ -353,7 +351,7 @@
     
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-W8fXfP3gkOKtndU4JGtKDvXbO53Wy8SZCQHczT5FMiiqmQfUpWbYdTil/SxwZgAN" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js" integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/" crossorigin="anonymous"></script>
-    
+    <script type="text/javascript" src="js/main.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>
