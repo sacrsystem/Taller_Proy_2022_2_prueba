@@ -1,215 +1,302 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device_width, initial-scale=1">
     <title>TALLER DE PROCESOS</title>
-    <link rel="stylesheet" href="Styles/style_BLOCKCHAIN.css">
+    <link rel="stylesheet" href="Styles/style_SC_BLOCKCHAIN/style_BLOCKCHAIN.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
 </head>
 
-<body class="row">
-    <header class="justify-content-center" style="padding-right: 0px;">
-        <div class="col-6 text-center d-flex align-items-center">
-            <a target="blank" href="https://www.usmp.edu.pe/"><img class="container" src="imagens/Principal/usmp.png" style="width: 95%;"></a>
-        </div>
-        <div class="col-6 text-center d-flex align-items-center">
-            <h1 class="container text-light" style="font-family: cursive; font-size: 300%;">TALLER DE PROYECTOS</h1>
+<body class="row" style="background-image: url(../Taller-2021-II/imagens/SC_BLOCKCHAIN/pexels-lorenzo-242236.jpg);">
+    <header class="header">
+        <div class="container logo-nav-container">
+            <a href="index_BLOCKCHAIN.html" class="logo">Blockchain</a>
+            <span class="menu-icon">Ver equipos</span>
+            <nav class="navigation">
+                <ul>
+                    <li><a href="index_SC_AWS.html">Grupo SC AWS</a></li>
+                </ul>
+                <ul>
+                    <li><a href="index_SC_AZURE.html">Grupo SC AZURE</a></li>
+                </ul>
+                <ul>
+                    <li><a href="index_SC_GOOGLE.html">Grupo SC GOOGLE</a></li>
+                </ul>
+                <ul>
+                    <li><a href="index_SC_HUAWEI.html">Grupo SC HUAWEI</a></li>
+                </ul>
+                <ul>
+                    <li><a href="index_SC_IBM.html">Grupo SC IBM</a></li>
+                </ul>
+                <ul>
+                    <li><a href="index_SCA_ANCHOR.html">Grupo SC ANCHOR</a></li>
+                </ul>
+                <ul>
+                    <li><a href="index_QA.html">Grupo QA</a></li>
+                </ul>
+                <ul>
+                    <li><a href="index_GESTION.html">Grupo GESTIÓN</a></li>
+                </ul>
+            </nav>
         </div>
     </header>
-    <div class="col-2">
-        <div class="navigation">
-            <ul>
-                <li class="list">
-                    <a href="index.html">
-                    <span class="icon">
-                    <!--  <ion-icon name="home-outline"></ion-icon> -->  
-                        <ion-icon name="person-circle-outline"></ion-icon>
-                    </span>
-                        <span class="title">Principal</span>
-                    </a>
-                </li>
-                <li class="list">
-                    <a href="index_SC_AWS.html">
-                    <span class="icon">
-                    <!--  <ion-icon name="home-outline"></ion-icon> -->  
-                        <ion-icon name="people-circle-outline"></ion-icon>
-                    </span>
-                        <span class="title">Grupo SC AWS</span>
-                    </a>
-                </li>
-                <li class="list">
-                    <a href="index_SC_AZURE.html">
-                    <span class="icon">
-                        <!-- <ion-icon name="person-outline"></ion-icon>-->  
-                        <ion-icon name="people-circle-outline"></ion-icon>
-                    </span>
-                        <span class="title">Grupo SC AZURE</span>
-                    </a>
-                </li>
-                <li class="list">
-                    <a href="index_SC_GOOGLE.html">
-                    <span class="icon">
-                    <!--  <ion-icon name="mail-unread-outline"></ion-icon>-->  
-                        <ion-icon name="people-circle-outline"></ion-icon>
-                    </span>
-                        <span class="title">Grupo SC GOOGLE</span>
-                    </a>
-                </li>
-                <li class="list">
-                    <a href="index_SC_HUAWEI.html">
-                    <span class="icon">
-                    <!--  <ion-icon name="settings-outline"></ion-icon>-->  
-                        <ion-icon name="people-circle-outline"></ion-icon>      
-                    </span>
-                        <span class="title">Grupo SC HUAWEI</span>
-                    </a>
-                </li>
-                <li class="list">
-                    <a href="index_SC_IBM.html">
-                    <span class="icon">
-                        <!--  <ion-icon name="settings-outline"></ion-icon>-->  
-                        <ion-icon name="people-circle-outline"></ion-icon>   
-                    </span>
-                        <span class="title">Grupo SC IBM</span>
-                    </a>
-                </li>
-                <li class="list">
-                    <a href="index_SCA_ANCHOR.html">
-                    <span class="icon">
-                    <ion-icon name="people-circle-outline"></ion-icon>
-                    </span>
-                        <span class="title">Grupo SCA ANCHOR</span>
-                    </a>
-                </li>
-                <li class="list active">
-                    <a href="index_BLOCKCHAIN.html">
-                    <span class="icon">
-                    <ion-icon name="people-circle-outline"></ion-icon>
-                    </span>
-                        <span class="title">Grupo BLOCKCHAIN</span>
-                    </a>
-                </li>
-                <li class="list">
-                    <a href="index_QUANTUM_COMPUTING.html">
-                    <span class="icon">
-                    <ion-icon name="people-circle-outline"></ion-icon>
-                    </span>
-                        <span class="title">Grupo QUANTUM COMPUTING</span>
-                    </a>
-                </li>
-                <li class="list">
-                    <a href="index_QA.html">
-                    <span class="icon">
-                    <ion-icon name="people-outline"></ion-icon>
-                    </span>
-                        <span class="title">Grupo QA</span>
-                    </a>
-                </li>
-                <li class="list">
-                    <a href="index_GESTION.html">
-                    <span class="icon">
-                    <ion-icon name="people-outline"></ion-icon>
-                    </span>
-                        <span class="title">Grupo GESTIÓN</span>
-                    </a>
-                </li>
-            </ul>
-        </div>
-    </div>
+    <main class="main">
 
-    <div class="col-10">
-        <main>
-            <section class="acerca-de">
-                <div class="contenedor">
-                    <h2 class="sobre-nosotros">GRUPO : BLOCKCHAIN</h2>
+            <div class="col-6 text-center d-flex align-items-center">
+                <a target="blank" href="https://www.usmp.edu.pe/"><img class="container" src="imagens/Principal/usmp.png" style="width: 95%;"></a>
+            </div>
+            <div class="col-6 text-center d-flex align-items-center">
+                <h1 class="container text-light" style="font-family: cursive; font-size: 300%;">TALLER DE PROYECTOS</h1>
+            </div>
+        
+        <div class="container">
+            <h2 class="sobre-nosotros">GRUPO : BLOCKCHAIN</h2>
                     <h3 class="slogan"> <b> PROYECTO : SMART CHAIN </b></h3>
-                    <p class="parrafo">  <b> PROBLEMÁTICA</b></p>
-                    <p class="parrafo"><b> Actualmente existe varios reclamos sobre la pensión universitaria ya que no
-                         ha variado mucho con respecto a la pensión que se cobraba antes de la pandemia.</b></p>
- 
-                    <p class="parrafo">  <b> SOLUCIÓN</b></p>
-                    <p class="parrafo"><b>Crear un Smart Contract que permita registrar todas las transferencias de dinero
-                         que hagan uso del fondo universitario, brindando mayor transparencia a los alumnos dándoles mayor tranquilidad 
-                        ya que estos podrán ver como su dinero invertido está siendo utilizado por la universidad.</b></p>
+                    <p>  <b> Blockchain</b></p>
+                    <p>Blockchain se trata de almacenar información con muchos testigos observando, lo que dificulta que la
+                         información sea falseada, siendo un sistema de almacenaje de información fuera del sistema convencional, una herramienta
+                          que sirve para crear una sociedad más equitativa y transparente.</p>
+        </div>
+        <div class="container">
+            
+                <section class="integrantes">
+                    <h2>Integrantes del Proyecto</h2>
+                    <hr>
+                    <div class="container">       
+                        <div class="integrante">
+                            <img src="imagens/SC_BLOCKCHAIN/steven.bmp" alt=""/>
+                            <p> STEVEN PALMA MUÑOZ <br /> steven_palma@usmp.pe <br/> <strong>Líder de equipo</strong> <br />(Programador Front-end)</p>
+                        </div>
+                        <div class="integrante">
+                            <img src="imagens/SC_BLOCKCHAIN/KASANDRA.jpeg" alt=""/>
+                            <p> ANGELICA KASANDRA RIVERA LAYNES <br /> Angelica_rivera@usmp.pe <br/> <strong>QA</strong> <br />(Especialista en Testing)</p>
+                        </div>
+                        <div class="integrante">
+                            <img src="imagens/SC_BLOCKCHAIN/Erik.jpeg" alt=""/>
+                            <p> ERIK JOEL ESPINOZA MENDOZA <br /> erik_espinoza@usmp.pe<br/> <strong>Investigador</strong> <br />(Pogramador de contratos)</p>
+                        </div> 
+                    </div>
+                    <br>
+
+                    <hr>
+                </section>
+                <div class="container">
+                    <h2>ESTRUCTURA DE LA BLOCKCHAIN</h2>
+                    <hr>
+                    <p>Blockchain es super seguro, pero no gracias a un super antivirus ni tampoco por tener un
+                        potente firewall, Blockchain se autoprotege gracias a su propia arquitectura ya que Blockchain
+                        es una cadena de bloques que contiene información, cada bloque puede tener diferentes tipos de 
+                        información.
+                    </p>
+                    <p><b>La estructura de Blockchain esta compuesto por:</b></p>
+                    <p><b>1.-La información:</b> Un ejemplo seria la información relativa a las transferencias de dinero: emisor, receptor, fecha, cantidad, etc.</p>
+                    <p><b>2.-El hash:</b> El hash es el número de identificación único e irrepetible que se genera en cada uno de los bloques.</p>
+                    <p><b>3.-El hash del bloque anterior:</b> Cada bloque tiene el hash del bloque anterior por lo que cada bloque queda conectado con su predecesor y su 
+                        sucesor formando una cadena.
+                    </p>
+                    <img src="imagens/SC_BLOCKCHAIN/estructura.jpg" alt="">
+                    <hr>
                 </div>
+                <div class="container">
+                    <h2>CONTRATOS INTELIGENTES</h2>
+                    <hr>
+                    <p>
+                        Un contrato inteligente es un programa que se almacena dentro de una Blockchain.
+                        Los contratos inteligentes amplían la Blockchain de los datos al Código y representan un contrato entre las partes, el contrato se codifica y cuando se produce
+                        una acción, el código se ejecuta y proporciona una respuesta.
+                    </p>
+                    <p>
+                        Todos los términos y condiciones de los contratos se definen mediante programación. Una definición especifica las reglas, los requisitos
+                        y las recompensas de los participantes en la Blockchain. También especifica como se transfieren los recursos digitales entre las partes y
+                        a cada contrato inteligente se le asigna una dirección de 20 bytes que lo identifica de forma única.
+                    </p>
+                    <p>
+                        Los contratos inteligentes se ejecutan por sí solos, envían eventos que desencadenan transiciones de estado y llaman a funciones, y además, son ideales
+                        para la tecnología de Blockchain porque permiten a la gente que no se conoce, hacer negocios de forma segura y sin intermediarios.
+                    </p>
+                    <p><b>Los contratos inteligentes tienen estas propiedades: </b></p>
+                    <p><b>1.-Transparencia: </b>Los usuarios de Blockchain pueden leer los contratos inteligentes y acceder a ellos mediante las API.</p>
+                    <p><b>2.-Inmutabilidad: </b>La ejecución de contratos inteligentes crea registros que no se pueden cambiar.</p>
+                    <p><b>3.-Distribución: </b>Los nodos de la red validan y comprueban la salida del contrato, los estados del contrato pueden ser visibles públicamente, en algunos casos incluso las
+                    variables "privadas" son visibles.</p>
+                    <img src="imagens/SC_BLOCKCHAIN/contrato.jpg" alt="">
+                    <hr>
+                </div>
+                <div class="container">
+                <h2>HERRAMIENTAS NECESARIAS PARA DESARROLLAR CONTRATOS INTELIGENTES</h2>
+                <hr>
+                <section class="cont">
+                    <div class="card">
+                        <div class="card-image car-1">
+                            
+                        </div>
+                        <h2 style="text-align: center;">Metamask</h2>
+                        <p>MetaMask es una extensión o plugin para 
+                            navegadores web que permite a los usuarios 
+                            interactuar fácilmente con las DApps de la blockchain de Ethereum. 
+                            ... Gracias a esto, los usuarios son capaces de utilizar de forma 
+                            sencilla dichas aplicaciones distribuidas y todo de forma integrada 
+                            desde su navegador favorito.</p>
+                    </div>
+                    <div class="card">
+                        <div class="card-image car-2"></div>
+                        <h2 style="text-align: center;">Ethers</h2>
+                        <p>Ether, como otras criptomonedas, utiliza 
+                            un libro digital compartido donde se registran 
+                            todas las transacciones. Es de acceso público, 
+                            completamente transparente y muy difícil de modificar 
+                            a posteriori.</p>
+                    </div>
+                    <div class="card">
+                        <div class="card-image car-3"></div>
+                        <h2 style="text-align: center;">Truffle</h2>
+                        <p>Truffle incluye la capacidad para crear scripts de despliegue 
+                            y migraciones. Es importante entender el contenido del directorio 
+                            de migraciones. Los archivos de migraciones se usan para desplegar 
+                            contratos en la blockchain y su nombre empieza con un número que indica 
+                            el orden en el que debe ejecutarse.</p>
+                    </div>
+                </section>
+                <section class="cont">
+                    <div class="card">
+                        <div class="card-image car-4"></div>
+                        <h2 style="text-align: center;">OpenZeppelin</h2>
+                        <p>OpenZeppelin es un proyecto que proporciona un conjunto de herramientas 
+                            para desarrollar aplicaciones descentralizadas y smart contracts poniendo 
+                            el foco en la seguridad de las mismas.
+                            Para ello, aplican en sus soluciones patrones estándar de seguridad y buenas 
+                            prácticas de desarrollo aprendidas de la experiencia que han ido cogiendo los 
+                            desarrolladores de Zeppelin 
+                            y de la comunidad, gracias a auditar centenares de smart contracts y de aplicaciones 
+                            descentralizadas a los largo de los últimos años.</p>
+                    </div>
+                    <div class="card">
+                        <div class="card-image car-5"></div>
+                        <h2 style="text-align: center;">Infura</h2>
+                        <p>Infura es una plataforma que proporciona un conjunto de herramientas e infraestructuras 
+                            que permiten a los desarrolladores llevar fácilmente su aplicación blockchain de la prueba, 
+                            a la implementación a escala, con acceso simple y confiable a Ethereum e IPFS.</p>
+                    </div>
+                    <div class="card">
+                        <div class="card-image car-6"></div>
+                        <h2 style="text-align: center;">Etherscan</h2>
+                        <p>Etherscan es la plataforma líder de BlockChain Explorer, Search, API y Analytics para Ethereum, 
+                            una plataforma descentralizada de contratos inteligentes. ... Puede utilizar tokens basados en 
+                            Ethereum en sus sistemas con su propio nombre.</p>
+                    </div>
+                </section>
                 
-            </section>
-            <section class="integrantes">
-                <h2>Integrantes del Proyecto</h2>
+                    <hr>
+                    <h2>MESAS DE TRABAJO PARA DESARROLLAR CONTRATOS INTELIGENTES</h2>
+                    <hr>
+                    <section class="cont">
+                        <div class="card">
+                            <div class="card-image car-7"></div>
+                            <h2 style="text-align: center;">IDE REMIX</h2>
+                            <p>Remix es un IDE basado en un navegador web que permite escribir contratos inteligentes de Solidity, 
+                                para más tarde implementar y ejecutar el contrato inteligente.</p>
+                        </div>
+                        <div class="card">
+                            <div class="card-image car-8"></div>
+                            <h2 style="text-align: center;">VS CODE</h2>
+                            <p>VS Code es un editor de código fuente multiplataforma con muchas bondades, portable, ligero y rápido. 
+                                Nos permite trabajar con diversos lenguajes de programación y nos auxilia mucho mientras no estemos 
+                                usando nuestro IDE.</p>
+                        </div>
+                    </section>
+                
                 <hr>
-                <div class="container">       
-                      <div class="integrante">
-                          <img src="imagens/SC_BLOCKCHAIN/RAUL.jpeg" alt=""/>
-                          <p> RAUL EDUARDO MALLCCO SOLIS <br /> raul_mallcco@usmp.pe <br/> <strong>Líder de equipo</strong> </p>
-                      </div>
-                      <div class="integrante">
-                          <img src="imagens/SC_BLOCKCHAIN/KASANDRA.jpeg" alt=""/>
-                          <p> ANGELICA KASANDRA RIVERA LAYNES <br /> Angelica_rivera@usmp.pe <br/> <strong>QA</strong> </p>
-                      </div>
-                      <div class="integrante">
-                          <img src="imagens/SC_BLOCKCHAIN/Erik.jpeg" alt=""/>
-                          <p> ERIK JOEL ESPINOZA MENDOZA <br /> erik_espinoza@usmp.pe<br/> <strong>Investigador</strong></p>
-                      </div> 
-                </div>
-                <br>
-                <div class="container">  
-                      <div class="integrante">
-                          <img src="https://image.flaticon.com/icons/png/128/456/456212.png" alt=""/>
-                          <p> JEAN PAUL CHANGANAQUI ARROYO <br /> jean_changanaqui@usmp.pe<br/> <strong>Programador</strong></p>
-                      </div>
-                </div>
+            </div>
+            <div class="container">
+                <h2>SOLIDITY</h2>
                 <hr>
-            </section>
-            <div class="card mb-3">
-                <h3 style="text-align: center;">Arquitectura del proyecto</h3>
-                <hr>                
-                <img class="card-img-top" src="imagens/SC_BLOCKCHAIN/ARQUITECTURA.png" height="1000px"  alt="">
-              </div>
-              <div class="card-body">
-                <p class="parrafo"><b>La arquitectura del proyecto está compuesto por:</b></p>
-                <p class="parrafo"><b>1.-La API con la que el usuario podrá interactuar con el Smart Contract.</b></p>
-                <p class="parrafo"><b>2.-El contrato inteligente que realizará la gestión de la información de manera autónoma o por invocación del usuario cuando detectan eventos externos.</b></p>
-                <p class="parrafo"><b>3.-El mecanismo de consenso que aprueba las transacciones lanzadas por el contrato inteligente.</b></p>
-                <p class="parrafo"><b>4.-La cadena de bloques cuya información almacenada no se podrá alterar.</b></p>
-              </div>
-              <div class="contenedor">
-                <h2 class="titulo" style="text-align: center;">Nuestros servicios</h2>
-                <div class="servicio-cont">
-                    <div class="servicio-ind">
-                        <img src="imagens/SC_BLOCKCHAIN/Remix.jpeg" alt="">
-                        <h3>REMIX - ETHEREUM</h3>
-                        <p>Es un compilador y un IDE basado en explorador y que se pueden usar para compilar contratos Ethereum en el lenguaje Solidity y para depurar transacciones. Remix constituye una excelente manera de explorar contratos de ejemplo, además, se puede usar para escribir, probar e implementar sus propios contratos.</p>
-                    </div>
-                    <div class="servicio-ind">
-                        <img src="imagens/SC_BLOCKCHAIN/VS.jpeg" alt="">
-                        <h3>VS CODE</h3>
-                       <p>Es un editor de código que se ha refinado y optimizado para compilar y depurar aplicaciones web y en las nubes modernas.</p>
-                    </div>
-                    <div class="servicio-ind">
-                        <img src="imagens/SC_BLOCKCHAIN/Metamask.jpeg" alt="">
-                        <h3>METAMASK</h3>
-                       <p>Metamask es un monedero de criptomonedas que se puede usar en navegadores como Chrome y Firefox. Pero no solo eso, pues también es una extensión que se puede emplear en dichos navegadores. ¿Para qué serviría Metamask como extensión? Pues funcionaría como una especie de puente de enlace entre los navegadores normales y la cadena de bloques Ethereum.</p>
-                    </div>
+                <p>
+                    Solidity es un lenguaje orientado a objetos para escribir contratos inteligentes.
+                </p>
+                <p>
+                    Como se mencionó anteriormente, los contratos inteligentes son programas almacenados dentro de una cadena de bloques donde se especifican las reglas y el
+                    comportamiento de los activos digitales que se transfieren. Los contratos inteligentes contienen lógica de estado y es programable.
+                </p>
+                <p>
+                    Las transacciones dan como resultado funciones que se ejecutan en contratos inteligentes y estos contratos a su vez, permiten crear un flujo de trabajo 
+                    empresarial.
+                </p>
+                <p><b>Caracteristicas de SOLIDITY: </b></p>
+                <p><b>1.- </b>Solidity es el lenguaje de programación más popular de la cadena de bloques de Ethereum.</p>
+                <p><b>2.- </b>Solidity es un lenguaje de alto nivel que se basa en otros lenguajes de programación, como C++, Python y JavaScipt.</p>
+                <p><b>3.- </b>Solidity es de tipo estático, lo que significa que la comprobación de tipos se realiza en el tiempo de compilación y no en el tiempo
+                de ejecución, como sucede con los lenguajes de tipos dinámicos. En los lenguajes de tipos estáticos hay que especificar el tipo de cada variable.</p>
+                <p><b>4.- </b>Solidity admite la herencia, de modo que las funciones, variables y otras propiedades que existen en un contrato se pueden usar en otro. Ademas, 
+                admite tipos complejos definidos por el usuario como "structs" y "enumeraciones", lo que permite agrupar tipos de datos relacionados entre sí.</p>
+                <p><b>5.- </b>Solidity es un lenguaje de programación de código abierto que cuenta con una comunidad de colaboradores cada vez más nutrida.</p>
+                <img src="imagens/SC_BLOCKCHAIN/Solidity.jpg" alt="">
+                <hr>
+            </div>
+            <div class="container">
+                <h2>EJEMPLO 1: CONTRATO PARA CREAR TOKENS ERC777</h2>
+                <hr>
+                <p>
+                    Utilizando el IDE Remix de ethereum, realizamos un contrato que nos permitirá crear tokens de tipo ERC777.
+                </p>
+                <p>
+                    Los tokens son conocidos como un activo digital, ya sean bitcoin, Ether u otras criptomonedas que representan una cantidad o valor. La diferencia es que, con 
+                    un token, el valor podría no ser monetario. Los tokens pueden representar tiempo, servicios, propiedades o bienes que se pueden comercializar.
+                </p>
+                <p>
+                    Los tokens pueden conceder permisos de plataforma especiales a un usuario, conceder acceso exclusivo a un servicio o representar la propiedad. También puede representar 
+                    criptomonedas que tengan un valor monetario.
+                </p>
+                <p>
+                    En resumen, los tokens de la Blockchain son básicamente contratos inteligentes que usan la Blockchain de Ethereum. Todos los elementos que contiene Ethereum se pueden 
+                    representar como un contrato inteligente y no hay ninguna regla que restringa lo que pueden hacer los contratos inteligentes. Por lo tanto, la comunidad ha desarrollado estándares 
+                    para documentar la manera en que un contrato de token puede operar con otros contratos. Los estándares también describen los detalles de la implementación de cada tipo de token.
+                </p>
+                <img src="imagens/SC_BLOCKCHAIN/Ejemplo1.jpg" alt="">
+                <hr>
+            </div>
+            <div class="container">
+                <h2>EJEMPLO 2: CONTRATO PARA ALMACENAR TOKENS</h2>
+                <hr>
+                <p>
+                    Utilizando el IDE Remix de ethereum, realizamos un contrato que nos permitirá almacenar nuestros tokens y retirarlos cuando nosotros queramos.
+                </p>
+                <p>
+                    Con este contrato, se busca demostrar que se pueden utilizar 2 contratos al mismo tiempo, ya que trabaja en conjunto con el contrato anterior, pero tambien puede trabajar con cualquier 
+                    otro contrato que se encargue de la creación de tokens.
+                </p>
+                <img src="imagens/SC_BLOCKCHAIN/Ejemplo2.jpg" alt="">
+                <hr>
+            </div>
+                <div class="container">
+                    <h2>ARQUITECTURA DE UN SISTEMA BLOCKCHAIN</h2>
+                    <hr>                
+                        <img src="imagens/SC_BLOCKCHAIN/ARQUITECTURA.png" width="570" style="width: 939px; align-items: center;" class="fr-dib fr-fic">
+                        <p><b>La arquitectura de un sistema Blockchain está compuesto por:</b></p>
+                    <p><b>1.-</b>La API con la que el usuario podrá interactuar con el Smart Contract.</p>
+                    <p><b>2.-</b>El contrato inteligente que realizará la gestión de la información de manera autónoma o por invocación del usuario cuando detectan eventos externos.</p>
+                    <p><b>3.-</b>El mecanismo de consenso que aprueba las transacciones lanzadas por el contrato inteligente.</p>
+                    <p><b>4.-</b>La cadena de bloques cuya información almacenada no se podrá alterar.</p>
                 </div>
-            </div>  
-        </main>
-    </div>
+                  </div>
+    </main>
+    <footer>
+        <div class="footer-content">
+            <h2 class="titulo-sección">Ir a la Wiki</h2>
+            <p>La wiki es la pagina donde se detalla todo el avance realizado por el equipo Blockchain en la investigación de dicha tecnología.</p>
+        <ul class="wiki">
+            <li><a href="https://dev.azure.com/GOOGLECLOUD-BLOCKCHAIN/SPACE%20FIA%202.0/_wiki/wikis/SPACE-FIA-2.0.wiki/6/BLOCKCHAIN"><i class="fab fa-wikipedia-w"></i></a></li>
+        </ul>
+        </div>
+        <div class="footer-bottom">
+            <p class="copy"> Copyright © 2021 Blockchain / Designed by <span>Erik Espinoza</span></p>
+        </div>
+    </footer>
 
-    <script type="text/javascript">
-        const list = document.querySelectorAll('.list');
-
-        function activeLink() {
-            list.forEach((item) => {
-                item.classList.remove('active');
-                this.classList.add('active');
-            });
-        }
-        list.forEach((item)=>{
-        item.addEventListener('click', activeLink);
-        });
-    </script>
-    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="../Taller-2021-II/js/Blockchain.js"></script>
+    <script src="https://kit.fontawesome.com/0aea1d7574.js" crossorigin="anonymous"></script>
+    
 </body>
 </html>
 
