@@ -145,6 +145,11 @@ body{
     background-position: 0 0,14px 14px;
 }
 
+a:hover{
+    color: #000;
+    font-weight: bold;
+}
+
 .container{
     width: 90%;
     max-width: var(--max-width-container);
@@ -282,12 +287,16 @@ p{
     display: grid;
     grid-template-columns: repeat(3,1fr);
     grid-template-rows: repeat(4,1fr);
-    gap: 20px;
+    gap: 10px;
     grid-template-areas: 
-    ".      card1   .    "
-    "card2  card1   card3"
-    "card2  card4   card3"
-    ".      card4   .   ";
+    "card2  card1   card4"
+    "card2  card1   card4"
+    ".      card3   .   "
+    ".      card3   .   "
+    ".      card5   .   "
+    ".      card5   .   "
+    "card7  card6   card8"
+    "card7  card6   card8";
 }
 
 .card__item{
@@ -315,6 +324,16 @@ p{
     font-family: 'Poppins', sans-serif;
 }
 
+.title::after{
+    content: "";
+    margin: auto;
+    display: block;
+    width: 120px;
+    margin-top: 10px;
+    height: 4px;
+    background-color: var(--color-primary);
+}
+
 .card__paragraph{
     font-weight: 300;
     margin-bottom: 20px;
@@ -336,6 +355,22 @@ p{
     grid-area: card4;
 }
 
+.card__item:nth-last-of-type(5){
+    grid-area: card5;
+}
+
+.card__item:nth-last-of-type(6){
+    grid-area: card6;
+}
+
+.card__item:nth-last-of-type(7){
+    grid-area: card7;
+}
+
+.card__item:nth-last-of-type(8){
+    grid-area: card8;
+}
+
 
 /* About us */
 
@@ -345,6 +380,16 @@ p{
     padding: 20px;
     font-family: 'Poppins', sans-serif;
     text-transform: uppercase;
+}
+
+.titulo::after{
+    content: "";
+    margin: auto;
+    display: block;
+    width: 120px;
+    margin-top: 10px;
+    height: 4px;
+    background-color: var(--color-primary);
 }
 
 .about-us {
@@ -369,7 +414,7 @@ p{
 }
 
 .articulo:hover {
-    box-shadow: 0 4px 10px rgba(17, 29, 48, .26);
+    box-shadow: 0 14px 45px rgba(17, 29, 48, .26);
 }
 
 .integrante{
@@ -381,6 +426,8 @@ p{
 
 .articulo>h3 {
     font-size: 24px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
     margin-top: 30px;
 }
 
@@ -389,6 +436,7 @@ p{
     color: #5D6678;
     margin-top: 15px;
     padding-bottom: 20px;
+    font-family: 'Poppins', sans-serif;
 }
 
 /*Arquitectura*/
@@ -399,6 +447,16 @@ p{
     font-size: 25px;
     text-align: center;
     font-family: 'Poppins', sans-serif;
+}
+
+.title__arquitect::after{
+    content: "";
+    margin: auto;
+    display: block;
+    width: 120px;
+    margin-top: 10px;
+    height: 4px;
+    background-color: var(--color-primary);
 }
 
 footer {
