@@ -563,7 +563,7 @@ p{
     height: 70%;
     transform: scale(0);
     border-radius: 10px;
-    transition: transform .2s .1s;
+    transition: transform .1s .0s;
 }
 
 .showImage{
