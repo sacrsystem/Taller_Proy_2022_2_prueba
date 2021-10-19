@@ -25,10 +25,19 @@ div.row #integrantes {
   text-align: center;
 }
 
-div #intro {
+#intro {
   padding-top: 2rem;
   margin: 3.5rem;
 }
+#descripcion {
+  padding-top: 5rem;
+  width: 25rem;
+  height: 24rem;
+}
+#devops {
+  align-content: center;
+}
+
 div.fotos {
   padding-left: 3rem;
   display: flex;
@@ -78,13 +87,13 @@ a:link {
   color: white;
 }
 a:visited {
-  color: rgb(235, 230, 166);
+  color: rgba(49, 70, 77, 0.555);
 }
 a:hover {
   color: rgb(189, 186, 186);
 }
 a:active {
-  color: rgb(117, 117, 117);
+  color: rgb(170, 169, 169);
 }
 a:visited.devops {
   color: #222831;
