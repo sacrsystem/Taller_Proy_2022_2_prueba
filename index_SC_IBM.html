@@ -89,7 +89,7 @@
         </section>
 
         <section class="about-us">
-            <div class="contenedor1">
+            <div class="container">
                 <h2 class="titulo">Miembros del Equipo</h2>
                 <div class="contenedor-articulo">
                     <div class="articulo" data-aos="zoom-in-right">
@@ -192,6 +192,22 @@
 
                     <div class="card__item">
                         <figure class="card__img">
+                            <img src="imagens/SC_IBM/node-red.png" class="card__picture">
+                        </figure>
+                        <h3 class="card__title">Node Red</h3>
+                        <p class="card__paragraph">Es un editor de flujo basado en el navegador donde se puede añadir o eliminar nodos y conectarlos entre sí con el fin de hacer que se comuniquen entre ellos. Node-RED es una herramienta muy potente que sirve para comunicar hardware y servicios de una forma muy rápida y sencilla.</p>
+                    </div>
+
+                    <div class="card__item">
+                        <figure class="card__img">
+                            <img src="imagens/SC_IBM/git.png" class="card__picture">
+                        </figure>
+                        <h3 class="card__title">Git</h3>
+                        <p class="card__paragraph">Git es un sistema de control de versiones distribuido de código abierto desarrollado por Linus Torvalds, el creador de Linux. El control de versiones distribuido permite a los desarrolladores descargar un software, realizar cambios y subir la versión que han modificado.</p>
+                    </div>
+
+                    <div class="card__item">
+                        <figure class="card__img">
                             <img src="imagens/SC_IBM/azure.png" class="card__picture">
                         </figure>
                         <h3 class="card__title">Azure DevOps</h3>
@@ -225,10 +241,10 @@
     </main>
     <section class="about-us">
         <h2 class="title__certificate">Certificados Scrum</h2>
-        <div class="contenedor">
-            <div class="portafolio-textos">
-                <p class="p__certificado">CERTIFICACIÓN EN SRUM STUDY TARGETING SUCCESS</p>
-            </div>
+        <div class="portafolio-textos">
+            <p class="p__certificado">CERTIFICACIÓN EN SRUM STUDY TARGETING SUCCESS</p>
+        </div>
+        <div class="container">
             <section class="gallery" id="galeria">
                 <div class="fotos">
                     <img src="https://dev.azure.com/giovannigamarra0785/24b44a52-b857-46c6-9bad-5aae57ed65dd/_apis/git/repositories/ed42f21e-ecfc-46f5-8ebb-5cc5e3d341b4/Items?path=/.attachments/Julio-9415ed7e-66d6-4319-aa38-db73fc33b1b1.png&download=false&resolveLfs=true&%24format=octetStream&api-version=5.0-preview.1&sanitize=true&versionDescriptor.version=wikiMaster"
@@ -264,10 +280,10 @@
 
     <section class="about-us__design">
         <h2 class="title__certificate">Certificado DESING THINKING PRACTITIONER</h2>
-        <div class="contenedor">
-            <div class="portafolio-textos">
-                <p class="p__certificado">CERTIFICACION EN ENTERPRISE DESING THINKING PRACTITIONER</p>
-            </div>
+        <div class="portafolio-textos">
+            <p class="p__certificado">CERTIFICACION EN ENTERPRISE DESING THINKING PRACTITIONER</p>
+        </div>
+        <div class="container">
             <section class="gallery" id="galeria">
                 <div class="fotos">
                     <img src="https://dev.azure.com/giovannigamarra0785/24b44a52-b857-46c6-9bad-5aae57ed65dd/_apis/git/repositories/ed42f21e-ecfc-46f5-8ebb-5cc5e3d341b4/Items?path=/.attachments/image-736059ef-e84a-42f5-8c96-d2114fbb3c3b.png&download=false&resolveLfs=true&%24format=octetStream&api-version=5.0-preview.1&sanitize=true&versionDescriptor.version=wikiMaster"
@@ -303,10 +319,10 @@
 
     <section class="about-us">
         <h2 class="title__certificate">Certificado DESING THINKING CO-CREATOR</h2>
-        <div class="contenedor">
-            <div class="portafolio-textos">
-                <p class="p__certificado">CERTIFICACION EN ENTERPRISE DESING THINKING CO-CREATOR</p>
-            </div>
+        <div class="portafolio-textos">
+            <p class="p__certificado">CERTIFICACION EN ENTERPRISE DESING THINKING CO-CREATOR</p>
+        </div>
+        <div class="container">
             <section class="gallery" id="galeria">
                 <div class="fotos">
                     <img src="https://dev.azure.com/giovannigamarra0785/24b44a52-b857-46c6-9bad-5aae57ed65dd/_apis/git/repositories/ed42f21e-ecfc-46f5-8ebb-5cc5e3d341b4/Items?path=/.attachments/image-793e7175-b1ac-419a-b171-13d90a366561.png&download=false&resolveLfs=true&%24format=octetStream&api-version=5.0-preview.1&sanitize=true&versionDescriptor.version=wikiMaster"
@@ -340,8 +356,28 @@
         </div>
     </section>
 
-    <section class="about-us__design">
-        <div class="contenedor">
+
+    <section class="about-us__design">   
+        <h2 class="title__certificate">Recursos Utilizados</h2>
+        <p class="card__copy">Estos son los recursos utilizados por el Grupo IBM</p>
+        <div class="body container">
+            <div id="carousel-wrapper">
+                <div id="menu">
+                    <div id="current-option">
+                    <span id="current-option-text1" data-previous-text="" data-next-text=""></span>
+                    <p id="current-option-text2" data-previous-text="" data-next-text=""></p>
+                    </div>
+                    <button id="previous-option"></button>
+                    <button id="next-option"></button>
+                
+                </div>
+                <div id="image"></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="about-us">
+        <div class="container">
             <h2 class="title__arquitect">Diagrama de Arquitectura</h2>
             <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
                 <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
@@ -379,6 +415,11 @@
                     </button>
                 </div>
                 <h3 class="title__arquitect">Descripción de la arquitectura</h3>
+                <h5>Descripción V1</h5>
+                <p>
+                    El usuario va a utilizar nuestro asistente Watson, lo utiliza mediamente la interfaz del chatbot que propone nuestro sitio web, lo hará de manera oral de tal manera que el chatbot lo transcribirá, para lograr la transcripción se contará con una API llamada speech to text, esta API procesará el audio a bits y lo enviará al servicio Watson Assistant donde se hará la transformación de audio a texto, contando con la ia del mismo servicio para la creación de la consulta por parte del usuario, después de la transformación lo plasmara en el servicio de chatbot para que después cumpla con la función del guardado en la base de datos, de esa manera el chatbot se alimente de las consultas de los usuarios, después de la información guardada, pasa y da registro de la respuesta a la web service donde contará con la interfaz previamente creada y con el uso de Internet podrá enviar la respuesta al chatbot con otra funcionalidad del servicio Watson, después enviándola al servicio de Watson Assistant para que la procese y para que así obtenga el contexto y verifique si es la respuesta correcta implementada anteriormente en la base de datos gracias a la nube con el servicio de Watson Assistant, y para finalizar el envío de la respuesta al usuario que realizó la consulta.
+                </p>
+                <h5>Descripción V1.0.1</h5>
                 <p>
                     En la ultima versión se implemento el desarrollo del IoT, complementando con los servicios de
                     deployeo para la Pagina Web como tambien para nuestra IoT, en el desempeño de nuestra pagina web se
@@ -390,7 +431,6 @@
                     diario, mensual y anual de cada ingreso de datos.
                 </p>
             </div>
-
         </div>
     </section>
 
@@ -431,6 +471,8 @@
             hamburguer.style.opacity = '0';
         }
     </script>
+
+    <script src="js/SC_IBM/slide.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
