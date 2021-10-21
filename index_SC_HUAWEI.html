@@ -1,199 +1,667 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <title>TALLER DE PROCESOS</title>
-    <link rel="stylesheet" href="Styles/style.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>SC_HUAWEI</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/H.png" rel="icon">
+  <link href="assets/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="vendor/aos/aos.css" rel="stylesheet">
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="Styles/style_SC_HUAWEI.css" rel="stylesheet">
+  <!-- =======================================================
+  * Template Name: MyResume - v4.1.0
+  * Template URL: https://bootstrapmade.com/free-html-bootstrap-template-my-resume/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
 </head>
+<style>
 
-<body class="row">
-    <header class="justify-content-center" style="padding-right: 0px;">
-        <div class="col-6 text-center d-flex align-items-center">
-            <a target="blank" href="https://www.usmp.edu.pe/"><img class="container" src="imagens/Principal/usmp.png" style="width: 95%;"></a>
-        </div>
-        <div class="col-6 text-center d-flex align-items-center">
-            <h1 class="container text-light" style="font-family: cursive; font-size: 300%;">TALLER DE PROYECTOS</h1>
-        </div>
-    </header>
-    <div class="col-2">
-        <div class="navigation">
-            <ul>
-                <li class="list">
-                    <a href="index.html">
-                    <span class="icon">
-                    <!--  <ion-icon name="home-outline"></ion-icon> -->  
-                        <ion-icon name="person-circle-outline"></ion-icon>
-                    </span>
-                        <span class="title">Principal</span>
-                    </a>
-                </li>
-                <li class="list">
-                    <a href="index_SC_AWS.html">
-                    <span class="icon">
-                    <!--  <ion-icon name="home-outline"></ion-icon> -->  
-                        <ion-icon name="people-circle-outline"></ion-icon>
-                    </span>
-                        <span class="title">Grupo SC AWS</span>
-                    </a>
-                </li>
-                <li class="list">
-                    <a href="index_SC_AZURE.html">
-                    <span class="icon">
-                        <!-- <ion-icon name="person-outline"></ion-icon>-->  
-                        <ion-icon name="people-circle-outline"></ion-icon>
-                    </span>
-                        <span class="title">Grupo SC AZURE</span>
-                    </a>
-                </li>
-                <li class="list">
-                    <a href="index_SC_GOOGLE.html">
-                    <span class="icon">
-                    <!--  <ion-icon name="mail-unread-outline"></ion-icon>-->  
-                        <ion-icon name="people-circle-outline"></ion-icon>
-                    </span>
-                        <span class="title">Grupo SC GOOGLE</span>
-                    </a>
-                </li>
-                <li class="list active">
-                    <a href="index_SC_HUAWEI.html">
-                    <span class="icon">
-                    <!--  <ion-icon name="settings-outline"></ion-icon>-->  
-                        <ion-icon name="people-circle-outline"></ion-icon>      
-                    </span>
-                        <span class="title">Grupo SC HUAWEI</span>
-                    </a>
-                </li>
-                <li class="list">
-                    <a href="index_SC_IBM.html">
-                    <span class="icon">
-                        <!--  <ion-icon name="settings-outline"></ion-icon>-->  
-                        <ion-icon name="people-circle-outline"></ion-icon>   
-                    </span>
-                        <span class="title">Grupo SC IBM</span>
-                    </a>
-                </li>
-                <li class="list">
-                    <a href="index_SCA_ANCHOR.html">
-                    <span class="icon">
-                    <ion-icon name="people-circle-outline"></ion-icon>
-                    </span>
-                        <span class="title">Grupo SCA ANCHOR</span>
-                    </a>
-                </li>
-                <li class="list">
-                    <a href="index_BLOCKCHAIN.html">
-                    <span class="icon">
-                    <ion-icon name="people-circle-outline"></ion-icon>
-                    </span>
-                        <span class="title">Grupo BLOCKCHAIN</span>
-                    </a>
-                </li>
-                <li class="list">
-                    <a href="index_QUANTUM_COMPUTING.html">
-                    <span class="icon">
-                    <ion-icon name="people-circle-outline"></ion-icon>
-                    </span>
-                        <span class="title">Grupo QUANTUM COMPUTING</span>
-                    </a>
-                </li>
-                <li class="list">
-                    <a href="index_QA.html">
-                    <span class="icon">
-                    <ion-icon name="people-outline"></ion-icon>
-                    </span>
-                        <span class="title">Grupo QA</span>
-                    </a>
-                </li>
-                <li class="list">
-                    <a href="index_GESTION.html">
-                    <span class="icon">
-                    <ion-icon name="people-outline"></ion-icon>
-                    </span>
-                        <span class="title">Grupo GESTIÓN</span>
-                    </a>
-                </li>
-            </ul>
-        </div>
+/*NAVBAR GRUPOS--*/
+
+.topnav {
+  overflow: hidden;
+  background-color: black;
+}
+
+.topnav a {
+  float: left;
+  color: #dfd5d5;
+  text-align: center;
+  padding: 18px 19px;
+  text-decoration: none;
+  font-size: 9px;
+}
+
+.topnav a:hover {
+  background-color: rgb(228, 104, 104);
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #640101;
+  color: white;
+}
+
+/*FIN NAVBAR GRUPOS*/ 
+
+        .container .a {
+            margin-top: 20px;
+            color: #740101;
+        }
+        .container .a p {
+            color: #640101;
+        }
+        .single-content {
+            position: relative;
+            transition: .3s;
+            box-shadow: 10px 20px 20px rgba(0, 0, 0, 0, 0.8);
+        }
+        .single-content .text-content,
+        .single-content:after {
+            position: absolute;
+            left: 20px;
+            right: 20px;
+        }
+        .single-content:after {
+            content: '';
+            display: block;
+            background: rgb(199, 138, 138);
+            top: 20px;
+            bottom: 20px;
+            opacity: 0;
+            transform: rotate3d(-1, 1, 0, 100deg);
+            transition: .4s;
+        }
+        .single-content:hover:after {
+            opacity: .7;
+            transform: rotate3d(0, 0, 0, 0deg);
+        }
+        .single-content img {
+          max-width: 100%;
+          height: 350px;
+        }
+        .text-content {
+            top: 45%;
+            opacity: 0;
+            z-index: 1;
+            transform: translate(10%, -30%);
+            transition: .3s;
+            text-align: center;
+            color: #fff;
+        }
+        .text-content h4 {
+            font-family: serif;
+        }
+        .single-content:hover .text-content {
+            opacity: 1;
+            transform: translate(0, -50%);
+            transition-delay: .3s;
+        }
+
+
+         /*section-1*/
+        .section-1{
+            margin-top:3%;
+        }
+        .section-1 .row .col-md-7, .text-center{
+            margin-top:10%;
+            margin-bottom: 10%;
+        }
+        .section-1 .parrafo-1{
+            color: black;
+            margin-top: 7%;
+        }
+        .col-md-7 img{
+            height:480px;
+        }
+        .col-md-5 h1{
+            color:#64AF8B ;
+        }
+        .col-md-5 .parrafo-1{
+            font-weight: bolder;
+            font-size: 0.9em;
+            color: #2C492F;
+        }
+        /*final*/
+
+</style>
+<body>
+
+  <div class="topnav">
+    <a href=""><img class="container" src="imagens/Principal/usmp.png" style="width: 153px;"></a>
+    <a class="active" href="index_BLOCKCHAIN.html">GRUPO BLOCKCHAIN</a>
+    <a href="index_GESTION.html">GRUPO GESTION</a>
+    <a href="index_QA.html">GRUPO QA</a>
+    <a href="index_QUANTUM_COMPUTING.html">GRUPO QUANTUM COMPUTING</a>
+    <a href="index_SC_AWS.html">GRUPO AWS</a>
+    <a href="index_SC_AZURE.html">GRUPO AZURE</a>
+    <a href="index_SC_GOOGLE.html">GRUPO GOOGLE</a>
+    <a href="index_SC_IBM.html">GRUPO IBM</a>
+    <a href="index_SC_HUAWEI.html">GRUPO HUAWEI</a>
+    <a  class="active" href="index_SCA_ANCHOR.html">GRUPO ANCHOR</a>
+  </div>
+  
+  
+
+
+
+
+  <!-- ======= Mobile nav toggle button ======= -->
+  <!-- <button type="button" class="mobile-nav-toggle d-xl-none"><i class="bi bi-list mobile-nav-toggle"></i></button> -->
+  
+  <!-- ======= Header ======= -->
+
+
+  <header id="header" class="d-flex flex-column justify-content-center">
+<div>
+    <nav id="navbar" class="navbar nav-menu" >
+      <ul >
+        <li><a href="#hero" class="nav-link scrollto active"><i class="bx bx-home"></i> <span>Home</span></a></li>
+        <li><a href="#about" class="nav-link scrollto"><i class="bx bx-user"></i> <span>Informacion</span></a></li>
+        <li><a href="#resume" class="nav-link scrollto"><i class="bx bx-file-blank"></i> <span>Avances</span></a></li>
+        <li><a href="#services" class="nav-link scrollto"><i class="bx bx-server"></i> <span>Herramientas</span></a></li>
+       <li><a href="#arquitectura" class="nav-link scrollto"><i class="bx bx-book-content"></i> <span>Arquitectura</span></a></li>      
+        
+      </ul>
+    </nav><!-- .nav-menu -->
+
+
+  </header><!-- End Header -->
+
+
+  <!-- ======= Hero Section ======= -->
+  
+  <section id="hero" class="d-flex flex-column justify-content-center">
+    <div class="container" data-aos="zoom-in" data-aos-delay="100">
+      <h1>SC Huawei Cloud</h1>
+      <p>Proyecto <span class="typed" data-typed-items="Smart Campus, Huawei Cloud"></span></p>
+      
     </div>
+  </section><!-- End Hero -->
+  
+  <main id="main">
 
-    <div class="col-10">
-        <div class="row">
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+            <h2>Informacion del proyecto</h2>
+            <p>
+            En esta seccion se muestra informacion sobre el proyecto
+            </p>
+          </div>
+
+          <div class="row">
             <div class="col-lg-5">
-              <img src="imagens/SC_HUAWEI/Ima2.jfif" class="img-fluid" alt="">
+              <img src="imagens/SC_HUAWEI/SCH.jpg" class="img-fluid" alt="">
             </div>
             <div class="col-lg-7 pt-4 pt-lg-0 content">
-              <h3>Miembros del proyecto </h3>
-              <p class="fst-italic">
-                Datos de los miembros que trabajaron para hacer posible este proyecto 
-              </p>
               <div class="row">
                 <div class="col-lg-8">
-                  <ul>
-                    <li><i class="bi bi-chevron-right"></i> <strong>QA:</strong> <span>RUIZ MALPICA CAROLINE SOFIA</span></li>
-                    <li><i class="bi bi-chevron-right"></i> <strong>Lider :</strong> <span>OQUENDO HUANCA JOSE</span></li>
-                    <li><i class="bi bi-chevron-right"></i> <strong>Integrante 1:</strong> <span>OJEDA SALAS BRYAN NICANOR</span></li>
-                    <li><i class="bi bi-chevron-right"></i> <strong>Integrante 2:</strong> <span>BAÑOS CHAVEZ JESUS FERNANDO</span></li>
-                    <li><i class="bi bi-chevron-right"></i> <strong>Integrante 3:</strong> <span>DAVILA RETAMOZO MAURICIO ANTONIO</span></li>
-                    <li><i class="bi bi-chevron-right"></i> <strong>Integrante 4:</strong> <span>CAYCHO YANCCE GIANNINA YERIMAR</span></li>
-                    <li><i class="bi bi-chevron-right"></i> <strong>Integrante 5:</strong> <span>ALMONACID GUTIERREZ DEYVID LUIS</span></li>
-    
-    
-                  </ul>
+                    <p> <h5>Visión:</h5>
+                    Ofrecer una atención en las áreas de mesa de parte y tesoreria innovadora y efectiva a los usuarios de la facultad de la universidad de San Martin de Porres para contribuir al servicio orientado a las necesidades.
+                    </p>
+                    <br>
+                    <p><h5>Mision:</h5>
+                    Implementar la mejora en los procesos administrativos de mesa de partes y tesoreria de la facultad de la universidad de San Martin de Porres en la facultad de ingeniería y arquitectura
+                   </p>
+                
                 </div>
-    
+                <br>
+                
               </div>
-    
+              
+              <br>
+              <br>
+              
             </div>
-          </div>
-          <!-- ======= seccion avances ======= -->
-          <h2>AVANCES</h2>
-          <p>En esta seccion de la pagina mostraremos todos los avances que se realizan semana a semana durante el plazo determinado para presentar el proyecto</p>
-          <div class="col-lg-8">
-            <h3>>Semana1</h3>
-            <ul>
-              <li><i class="bi bi-chevron-right"></i> <strong>Matriz FODA</strong> </li>
-              <li><i class="bi bi-chevron-right"></i> <strong>Certificaciones Scrum y Desing Thinking</strong></li>
-              <li><i class="bi bi-chevron-right"></i> <strong>Investigación de artículo sobre campus inteligente </strong> </li>
-              <li><i class="bi bi-chevron-right"></i> <strong>Creacion de logo</strong> </li>
-              <li><i class="bi bi-chevron-right"></i> <strong>Creacion de cuentas en la nuve de HuaweiCloud:</strong> </li>
-            </ul>
-          </div>
-        <!-- ======= Fin avances ======= -->
             <div class="section-title">
-                <h2>HERRAMIENTAS</h2>
-                <p>Todos las HERRAMIENTAS que utilizaremos para realizar este proyecto</p>
+              <h2>Descripcion del proyecto</h2>
+
+              <div class="section-1" id="about">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-5">
+                            <img src="imagens/SC_HUAWEI/portada.jpg" alt="" width="100%" height="100%" alt="">
+                        </div>
+                        <div class="col-md-7 text-center">
+                            <h1>Smart Campus Huawei</h1>
+                            <p class="parrafo-1"> Nuestro proyecto se trata de crear una plataforma web responsiva con la integración de un Bot de Azure Bot Servicies, el cual ayudara a los alumnos y personal administrativo de la USMP -FIA en tramites e información guiada para presentar en las áreas
+                              de Registros Académicos y Tesorería, los tramites a completar por parte del Bot o guías brindadas se almacenaran en una base de datos (dentro de Huawei Cloud), donde también existirá una VPC para comunicación con el App Servicies de
+                              Azure, que soportara al Bot y se utilizara la conectividad con las funciones para respuesta concreta o envió de solicitud/captura de información. Dando de esta manera a los usuarios conectados mediante una IoT (Tablet con cámara web).</p>
+                            <p class="parrafo-1">La eficiencia requerida en este tipo de tramites, ya que actualmente son demorados por intermedio de correos electrónicos y no se tiene un soporte para ser completados. Pensando en el entorno Presencial, se implementara un modulo donde
+                              los propios estudiantes mediante reconocimiento facial podrán acceder a consultas y tramites de manera autónoma y rápida, acelerando el proceso de manera intuitiva gracias al Diseño UX que se implementara Lista de servicios • Azure
+                              bot service • funciones • Huawei Cloud Herramientas • Git • Azure Devops • Visual Code • PostgreSQL</p>
+                        </div>
+                    </div>
+                </div>
             </div>
-        <!-- ======= Imagenes ======= -->
-        <figure class="figure">
-        <img src="imagens/SC_HUAWEI/github.jpg" alt=""class="img-fluid" alt="">
-        <figcaption class="figure-caption text-end"><strong>Github</strong></figcaption>
-        </figure>
-        <figure class="figure">
-        <img src="imagens/SC_HUAWEI/huawei1.jpg" alt=""class="img-fluid" alt="" style="width: 280px;">
-        <figcaption class="figure-caption text-end"><strong>HuaweiCloud</strong></figcaption>
-        </figure>
-        <figure class="figure">
-        <img src="imagens/SC_HUAWEI/zotero.png" alt=""class="img-fluid" alt="" style="width: 370px;">
-        <figcaption class="figure-caption text-end"><strong>Zotero</strong></figcaption>
-        </figure>
-        <!-- ======= Fin Imagenes ======= -->
+
+
+             
+            </div>
+          </div>
+<br> <br>
+        <div class="section-title">
+          <h2>Informacion de integrantes</h2>
+          <p>
+            en esta seccion se muestra informacion sobre los integrantes del equipo huawei
+          </p>
+        </div>
+        <br>
+         
+        <!--card sobre integrantes del equipo huawei -->
+  
+    <div class="container a text-center pb-3">
+       
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+            <div class="row">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="row">
+                            <div class="col-md-4 col-sm-6">
+                            
+                                <div class="single-content">
+                                    <img src="imagens/SC_HUAWEI/Jose.jpeg"  alt=""  >
+                                    <div class="text-content">
+                                        <h3 class="fst-italic">Jose Oquendo</h2>
+                                        <p class="fst-italic">Lider del grupo</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-sm-6">
+                                <div class="single-content">
+                                    <img src="imagens/SC_HUAWEI/Bryan.jpg" >
+                                    <div class="text-content">
+                                        <h3 class="fst-italic">Bryan ojeda</h2>
+                                       <p class="fst-italic">programador</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-sm-6">
+                                <div class="single-content">
+                                    <img src="imagens/SC_HUAWEI/gianina.jpeg" alt="">
+                                    <div class="text-content">
+                                        <h3 class="fst-italic">Giannina caycho</h2>
+                                        <p class="fst-italic">Programador</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                   
+                    <div class="carousel-item ">
+                        <div class="row">
+                            <div class="col-md-4 col-sm-6">
+                                <div class="single-content">
+                                    <img src="imagens/SC_HUAWEI/Deyvid.jpeg" alt="">
+                                    <div class="text-content">
+                                        <h3 class="fst-italic">Deyvid Almonacid</h2>
+                                        <p class="fst-italic">Programador</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-sm-6">
+                                <div class="single-content">
+                                    <img src="imagens/SC_HUAWEI/sofi2.jpeg" alt="">
+                                    <div class="text-content">
+                                        <h3 class="fst-italic">Sofia Ruiz</h2>
+                                        <p class="fst-italic">Programador</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-sm-6">
+                                <div class="single-content">
+                                    <img src="imagens/SC_HUAWEI/jesus.jpeg" alt="">
+                                    <div class="text-content">
+                                        <h3 class="fst-italic">Jesus Baños</h2>
+                                        <p class="fst-italic">Programador</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item ">
+                        <div class="row">
+                            <div class="col-md-4 col-sm-6">
+                                <div class="single-content">
+                                    <img src="imagens/SC_HUAWEI/Ruth.jfif" alt="">
+                                    <div class="text-content">
+                                        <h3 class="fst-italic">Ruth Cueva</h2>
+                                        <p class="fst-italic">Quality Assurance</p>
+                                    </div>
+                                </div>
+                         
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
     </div>
 
-    <script type="text/javascript">
-        const list = document.querySelectorAll('.list');
+        <!--end of card sobre integrantes huawei -->
+        
+      </div>
+    </section><!-- End About Section -->
 
-        function activeLink() {
-            list.forEach((item) => {
-                item.classList.remove('active');
-                this.classList.add('active');
-            });
-        }
-        list.forEach((item)=>{
-        item.addEventListener('click', activeLink);
-        });
-    </script>
-    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+    <!-- ======= SECCION AVANCES ======= -->
+    <section id="resume" class="resume">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title" >
+          <h2>AVANCES</h2>
+          <p class="fst-normal">En esta seccion de la pagina mostraremos todos los avances que se realizan semana a semana durante el plazo determinado para presentar el proyecto</p>
+<br>
+<br>
+          <div class="row">
+            <div class="col-4">
+              <div class="list-group" id="list-tab" role="tablist">
+                <a class="list-group-item list-group-item-action active" id="list-home-list" data-bs-toggle="list" href="#list-home" role="tab" aria-controls="list-home">Certificados obtenidos</a>
+                <a class="list-group-item list-group-item-action" id="list-profile-list" data-bs-toggle="list" href="#list-profile" role="tab" aria-controls="list-profile">Wiki</a>
+                <a class="list-group-item list-group-item-action" id="list-messages-list" data-bs-toggle="list" href="#list-messages" role="tab" aria-controls="list-messages">Repositorio del Proyecto</a>
+                <a class="list-group-item list-group-item-action" id="list-messages1-list" data-bs-toggle="list" href="#list-messages1" role="tab" aria-controls="list-messages1">Microsoft Planner</a>
+                <a class="list-group-item list-group-item-action" id="list-messages1-list" data-bs-toggle="list" href="#list-messages2" role="tab" aria-controls="list-messages2">Zotero</a>
+                <!--- <a class="list-group-item list-group-item-action" id="list-settings-list" data-bs-toggle="list" href="#list-settings" role="tab" aria-controls="list-settings">Settings</a>-->
+              </div>
+            </div>
+            <div class="col-8">
+              <div class="tab-content" id="nav-tabContent">
+                <div class="tab-pane fade show active " id="list-home" role="tabpanel" aria-labelledby="list-home-list">
+                  <p class="fst-italic">
+                  En esta seccion podremos observar los certificados de IBM de cada miembro del equipo. 
+                  <a href="https://dev.azure.com/joseoquendo/SC_HUAWEI/_wiki/wikis/SC_HUAWEI.wiki/21/Certificaci%C3%B3n-para-Design-Thinking-de-IBM">"Design thinking</a>
+                  <a href="https://dev.azure.com/joseoquendo/SC_HUAWEI/_wiki/wikis/SC_HUAWEI.wiki/27/certificado-de-co-creator-IBM">, Desing Thinking Co-Creator Course"
+                  </a>
+
+                </p>
+                <br>  
+                <p class="fst-italic">
+                  En esta seccion podremos observar los certificados de Scrum Fundamentals Certified de cada miembro del equipo.
+                  <a href="https://dev.azure.com/joseoquendo/SC_HUAWEI/_wiki/wikis/SC_HUAWEI.wiki/45/Certificados-Scrum-Fundamentals">Vease aqui</a>
+                 
+
+                </p>
+              </div>
+                <div class="tab-pane fade" id="list-profile" role="tabpanel" aria-labelledby="list-profile-list"><p class="fst-italic">En nuestra wiki podremos observar cada avance que se hizo durante la creacion del proyecto <a href="https://dev.azure.com/joseoquendo/SC_HUAWEI/_wiki/wikis/SC_HUAWEI.wiki/1/SMART-WEB">"Vease AQUI"</a></p></div>
+                <div class="tab-pane fade" id="list-messages" role="tabpanel" aria-labelledby="list-messages-list"><p class="fst-italic">Aqui podremos encontrar el link de nuestro repositorio de el proyecto Smart Campus en AzureDevOps <a href="https://dev.azure.com/joseoquendo/SC_HUAWEI/_git/pagina-de-avances.git">"Repositorio"</a></p></div>
+                <div class="tab-pane fade" id="list-messages1" role="tabpanel" aria-labelledby="list-messages1-list"><p class="fst-italic">Aqui podremos encontrar el link de nuestras tareas realizadas en Microsoft Planner <a href="https://tasks.office.com/usmp.pe/es-US/Home/Planner/#/plantaskboard?groupId=fad749c2-3d18-4c8c-a214-b3470e1c2373&planId=k-mmgjtEvE-51W1GF_YHqWQABkdS">"Planner"</a></p></div>
+                <div class="tab-pane fade" id="list-messages2" role="tabpanel" aria-labelledby="list-messages2-list"><p class="fst-italic">Aqui podremos encontrar el link de nuestro Zotero <a href="https://www.zotero.org/groups/4397399/sc_huawei/collections/TPHD2BKH">"Zotero"</a></p></div>
+
+
+
+               
+                <!---- <div class="tab-pane fade" id="list-settings" role="tabpanel" aria-labelledby="list-settings-list">...</div>-->
+              </div>
+            </div>
+          </div>
+            
+          </div>
+        </div>
+
+        
+
+      </div>
+    </section><!-- End Resume Section -->
+
+
+    <!-- ======= SECCION HERRAMIENTAS ======= -->
+    <section id="services" class="services">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>HERRAMIENTAS</h2>
+          <p>Todos los softaware que utilizamos para realizar este proyecto</p>
+
+        </div>
+
+        <div class="row">
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="300">            
+            <center>
+              <img src="imagens/SC_HUAWEI/github.jpg" alt=""class="img-fluid" style="max-width:80%;" alt="">
+              <h4>Github</h4>
+            <p>
+              <a class="btn btn-primary" data-bs-toggle="collapse" href="#A" role="button" aria-expanded="false" aria-controls="collapseExample">
+                Ver
+              </a>             
+            </p>
+            <div class="collapse" id="A">
+              <div class="card card-body">
+                GitHub es una forja para alojar proyectos utilizando el sistema de control de versiones Git. Se utiliza principalmente para la creación de código fuente de programas de ordenador. El software que opera GitHub fue escrito en Ruby on Rails. Desde enero de 2010, GitHub opera bajo el nombre de GitHub, Inc         </div></center>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="300">            
+            <center>
+              <img src="imagens/SC_HUAWEI/azure.png" class="img-fluid"  alt="">
+              <h4>Microsoft azure</h4>
+            <p>
+              <a class="btn btn-primary" data-bs-toggle="collapse" href="#B" role="button" aria-expanded="false" aria-controls="collapseExample">
+                Ver
+              </a>             
+            </p>
+            <div class="collapse" id="B">
+              <div class="card card-body">
+                Microsoft Azure es un servicio de computación en la nube creado por Microsoft para construir, probar, desplegar y administrar aplicaciones y servicios mediante el uso de sus centros de datos.
+              </div>
+            </div></center>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="300">            
+            <center>
+              <img src="imagens/SC_HUAWEI/Huawei-Cloud.png" class="img-fluid" style="max-width:80%;" alt=""   
+              
+              <br><br><br>
+              <h4>Huawei cloud</h4>
+            <p>
+              <a class="btn btn-primary" data-bs-toggle="collapse" href="#C" role="button" aria-expanded="false" aria-controls="collapseExample">
+                Ver
+              </a>             
+            </p>
+            <div class="collapse" id="C">
+              <div class="card card-body">
+                HUAWEI CLOUD es un proveedor líder de servicios en la nube, que reúne los más de 30 años de experiencia de Huawei en productos y soluciones de infraestructura de TIC. Estamos comprometidos a brindar servicios en la nube confiables, seguros y rentables para potenciar las aplicaciones, aprovechar el poder de los datos y ayudar a las organizaciones de todos los tamaños a crecer en el mundo inteligente de hoy. HUAWEI CLOUD también se compromete a brindar servicios de inteligencia artificial y nube asequibles, efectivos y confiables a través de la innovación tecnológica.
+            </div>
+            </div></center>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="300">            
+            <center>
+              <img src="imagens/SC_HUAWEI/teams.png" class="img-fluid" style="max-width:80%;" alt="">
+              <br> 
+              <h4>Teams</h4>
+            <p>
+              <a class="btn btn-primary" data-bs-toggle="collapse" href="#D" role="button" aria-expanded="false" aria-controls="collapseExample">
+                Ver
+              </a>             
+            </p>
+            <div class="collapse" id="D">
+              <div class="card card-body">
+                Microsoft Teams es una plataforma unificada de comunicación y colaboración que combina chat persistente en el lugar de trabajo, reuniones de video, almacenamiento de archivos e integración de aplicaciones.  </div></center>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="300">            
+            <center>
+              <img src="imagens/SC_HUAWEI/adobe.jpg" class="img-fluid" style="max-width:80%;" alt="">
+              <br><br>
+              <h4>Adobe ilustrator</h4>
+            <p>
+              <a class="btn btn-primary" data-bs-toggle="collapse" href="#F" role="button" aria-expanded="false" aria-controls="collapseExample">
+                Ver
+              </a>             
+            </p>
+            <div class="collapse" id="F">
+              <div class="card card-body">
+                Adobe Illustrator es un editor de gráficos vectoriales en forma de taller de arte que trabaja sobre un tablero de dibujo, conocido como «mesa de trabajo» y está destinado a la creación artística de dibujo y pintura para ilustración, para crear y diseñar imágenes, sirve para editar entre otras cosas  </div></center>
+          </div>
+        
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="300">            
+            <center>
+              <img src="imagens/SC_HUAWEI/visual.png" class="img-fluid"  alt="">
+              <h4>Visual code</h4>
+            <p>
+              <a class="btn btn-primary" data-bs-toggle="collapse" href="#E" role="button" aria-expanded="false" aria-controls="collapseExample">
+                Ver
+              </a>             
+            </p>
+            <div class="collapse" id="E">
+              <div class="card card-body">
+                Visual Studio Code es un editor de código fuente desarrollado por Microsoft para Windows, Linux y macOS. Incluye soporte para la depuración, control integrado de Git, resaltado de sintaxis, finalización inteligente de código, fragmentos y refactorización de código 
+               </div>
+
+        </div>
+
+
+
+
+      </div>
+
+      <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="300">            
+        <center>
+          <img src="imagens/SC_HUAWEI/Python.png" class="img-fluid" width="500px" alt="">
+          <h4>Python</h4>
+        <p>
+          <a class="btn btn-primary" data-bs-toggle="collapse" href="#G" role="button" aria-expanded="false" aria-controls="collapseExample">
+            Ver
+          </a>             
+        </p>
+        <div class="collapse" id="G">
+          <div class="card card-body">
+            Python es un lenguaje de programación interpretado cuya filosofía hace hincapié en la legibilidad de su código.​ Se trata de un lenguaje de programación multiparadigma, ya que soporta parcialmente la orientación a objetos, programación imperativa y, en menor medida, programación funcional.
+    
+          </div>
+    
+          </div>
+        </div>
+  
+        <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="300">            
+          <center>
+            <img src="imagens/SC_HUAWEI/azure devops.png" class="img-fluid" style="max-width:80%;" width="300px" alt="">
+            <h4>Microsoft Azure DevOps</h4>
+          <p>
+            <a class="btn btn-primary" data-bs-toggle="collapse" href="#M" role="button" aria-expanded="false" aria-controls="collapseExample">
+              Ver
+            </a>             
+          </p>
+          <div class="collapse" id="M">
+            <div class="card card-body">
+              Azure DevOps Server es un producto de Microsoft que proporciona control de versiones, informes, gestión de requisitos, gestión de proyectos, compilaciones automatizadas, pruebas y capacidades de gestión de versiones
+            </div>
+          </div>
+        </center>
+        </div>
+
+        <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="300">            
+          <center>
+            <img src="imagens/SC_HUAWEI/zotero.png" class="img-fluid" style="max-width:80%;" width="300px" alt="">
+            <h4>Zotero </h4>
+          <p>
+            <a class="btn btn-primary" data-bs-toggle="collapse" href="#N" role="button" aria-expanded="false" aria-controls="collapseExample">
+              Ver
+            </a>             
+          </p>
+          <div class="collapse" id="N">
+            <div class="card card-body">
+              Zotero es una aplicación para la administración de referencias bibliográficas,Los usuarios pueden añadir notas, etiquetas, y sus propios metadatos a través de la interfaz del navegador.
+             </div>
+     
+
+
+      </div>
+
+
+    </section><!-- End Services Section -->
+
+
+    <section id="arquitectura" class="arquitectura">
+      <div class="section-title" >
+        <h2>Arquitectura del proyecto</h2>
+        <p>La siguiente imagen muestra la arquitectura de nuestro proyecto SMART CAMPUS</p>
+        <img src="imagens/SC_HUAWEI/arquitectura.PNG" class="border border-3" alt="...">
+     
+      <h2> descripcion</h2>
+      <p class="parrafo-1">La integración de un Bot de Azure Bot Servicies nos permitira  ayudara a los alumnos y personal administrativo de la USMP -FIA en tramites e información guiada para presentar en las áreas
+        de Registros Académicos y Tesorería, los tramites a completar por parte del Bot o guías brindadas se almacenaran en una base de datos (dentro de Huawei Cloud), donde también existirá una VPC para comunicación con el App Servicies de
+        Azure, que soportara al Bot y se utilizara la conectividad con las funciones para respuesta concreta o envió de solicitud/captura de información. Dando de esta manera a los usuarios conectados mediante una IoT (Tablet con cámara web).</p>
+    </div>
+    </section>
+
+      </div>
+    </section><!-- End Portfolio Section -->
+
+  
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="container">
+      
+      <div class="copyright">
+        &copy; Copyright <strong><span>Proyecto final</span></strong>. All Rights Reserved
+      </div>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you purchased the pro version. -->
+        <!-- Licensing information: [license-url] -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/free-html-bootstrap-template-my-resume/ -->
+        
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+  
+  
+
+  <!-- Vendor JS Files -->
+  <script src="vendor/aos/aos.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="vendor/php-email-form/validate.js"></script>
+  <script src="vendor/purecounter/purecounter.js"></script>
+  <script src="vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="vendor/typed.js/typed.min.js"></script>
+  <script src="vendor/waypoints/noframework.waypoints.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="js/scriptsSCH.js"></script>
+  <script src="js/scripts.js"></script>
+
 </body>
+
 </html>
