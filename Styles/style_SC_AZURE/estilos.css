@@ -17,6 +17,7 @@ body {
     overflow: hidden;
     transition: width 0.5s;
     border-radius: 1px;
+    margin-top: -860px;
 }
 
 .contenedor {
@@ -139,6 +140,7 @@ main .sobre-nosotros{
 
 .portafolio{
     background: #f2f2f2;
+    width: 100%;
 }
 
 .galeria-port{
@@ -241,7 +243,7 @@ main .sobre-nosotros{
 }
 
 .servicio-ind{
-    width: 28%;
+    width: 23%;
     text-align: center;
 }
 
@@ -392,7 +394,7 @@ footer{
     /* Galeria */
 
     .imagen-port{
-        width: 95%;
+        width: 10%;
     }
 
     /* Clients */
@@ -435,3 +437,5 @@ footer{
         font-size: 20px;
     }
 }
+
+
