@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
 
 * {
     margin: 0;
@@ -24,7 +26,7 @@ h6 {
 
 .contenedor {
     width: 100%;
-    max-width: 1600px;
+    max-width: 1700px;
     margin: auto;
     overflow: hidden;
 }
@@ -33,6 +35,36 @@ h1 {
     font-size: 50px;
 }
 
+.enlace__contenedor{
+    display: block;
+}
+
+.btn__enlace{
+    text-decoration: none;
+    background: transparent;
+    color: black;
+    border: 2px solid #4E4AB6;
+    font-size: 14px;
+    letter-spacing: 2px;
+    padding: 20px 50px;
+    text-transform: uppercase;
+    cursor: pointer;
+    display: inline-block;
+    margin: 15px 30px;
+    /* animate and time the transitions*/
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.btn__enlace:hover{
+    text-decoration: none;
+    background-color: white;
+    color: black;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+  }
 
 /* Header */
 header::before {
@@ -43,8 +75,9 @@ header::before {
 
 
 nav {
+    font-family: 'Noto Sans Mono', monospace;
     width: 100%;
-    height: 80px;
+    height: 100px;
     background: #fff;
     border-bottom: 1px solid transparent;
     box-shadow: 1px 1px 10px 0 rgba(0, 0, 0, .2);
@@ -57,7 +90,7 @@ nav {
 .nav {
     display: flex;
     justify-content: space-between;
-    height: 80px;
+    height: 100px;
     width: 100%;
     align-items: center;
     padding: 0 40px;
@@ -101,7 +134,7 @@ nav {
 
 .contenido-header {
     width: 100%;
-    height: 600px;
+    height: 800px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -195,47 +228,47 @@ p{
     font-family: 'Poppins', sans-serif; 
 }
 
-/* Instrcutor */
+/* Intro */
 
-.instructor{
+.intro{
     text-align: center;
     border-bottom: 2px solid #ccc;
     --padding-container: 30px 0 60px;
 }
 
-.instructor__container{
+.intro__container{
     width: 70%;
     margin: 0 auto;
 }
 
-.instructor__name{
+.intro__name{
     margin: 20px 0;
 }
 
-.instructor__name::after{
+.intro__name::after{
     content: "";
     margin: auto;
     display: block;
-    width: 200px;
+    width: 100px;
     margin-top: 10px;
     height: 4px;
     background-color: var(--color-primary);
 }
 
-.instructor__tag{
+.intro__tag{
     font-weight: 700;
     color: var(--color-primary);
     margin-bottom: 20px;
 }
 
-.instructor__paragraph{
+.intro__paragraph{
+    font-family: 'Montserrat', sans-serif;
     text-align: left;
     line-height: 1.5;
-    font-style: italic;
     color: #615a5a;
 }
 
-.instructor__img{
+.intro__img{
     width: 150px;
     height: 150px;
     border-radius: 50%;
@@ -247,26 +280,20 @@ p{
 
 .about{
     display: grid;
-    grid-template-columns: 5fr 4fr;
-    place-items: center;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
 }
 
-.about__course{
-    width: 90%;
+.about__nosotros{
+    align-self: center;
+    justify-self: center;
 }
 
 .about__paragraph{
+    font-family: 'Montserrat', sans-serif;
     margin: 20px 0;
     line-height: 1.5;
-    font-weight: 300;
-}
-
-.about__picture{
-    text-align: center;
-}
-
-.about__img{
-    width: 95%;
+    font-weight: 400;
 }
 
 /* Card */
@@ -328,7 +355,7 @@ p{
     content: "";
     margin: auto;
     display: block;
-    width: 120px;
+    width: 60px;
     margin-top: 10px;
     height: 4px;
     background-color: var(--color-primary);
@@ -394,6 +421,12 @@ p{
 
 .about-us {
     background: #f2f2f2;
+    padding: 50px 0;
+}
+
+.about-us__design{
+    background: #fff;
+    padding: 50px 0;
 }
 
 .contenedor-articulo {
@@ -404,11 +437,12 @@ p{
 }
 
 .articulo {
-    width: 29%;
+    cursor: pointer;
+    width: 30%;
     background: #fff;
     margin-bottom: 30px;
     border-radius: 10px;
-    padding: 45px 30px 60px 30px;
+    padding: 40px 30px 40px 30px;
     transition: 0.5s;
     text-align: center;
 }
@@ -419,13 +453,13 @@ p{
 
 .integrante{
     text-align: center;
-    height: 200px;
-    width:220px ;
+    height: 250px;
+    width:250px ;
     border-radius: 50%;
 }
 
 .articulo>h3 {
-    font-size: 24px;
+    font-size: 23px;
     font-family: 'Poppins', sans-serif;
     font-weight: 600;
     margin-top: 30px;
@@ -440,6 +474,10 @@ p{
 }
 
 /*Arquitectura*/
+.container__card{
+    padding: 50px;
+}
+
 .title__arquitect{
     text-transform: uppercase;
     font-weight: 700;
@@ -458,6 +496,93 @@ p{
     height: 4px;
     background-color: var(--color-primary);
 }
+
+/*Certificados*/
+
+.title__certificate{
+    text-transform: uppercase;
+    font-weight: 700;
+    padding: 20px;
+    font-size: 25px;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+.title__certificate::after{
+    content: "";
+    margin: auto;
+    display: block;
+    width: 100px;
+    margin-top: 10px;
+    height: 4px;
+    background-color: var(--color-primary);
+}
+
+.p__certificado{
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+.gallery{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.fotos{
+    width: 30%;
+    margin-bottom:20px;
+}
+
+.fotos img{
+    width: 100%;
+    height:310px;
+    border-radius: 5px;
+}
+.fotos img:hover{
+    opacity:.6;
+    cursor: pointer;
+}
+
+.imagen-light{
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0);
+    transform: translate(100%);
+    transition: transform .0s ease-in-out;
+}
+
+.agregar-imagen{
+    width: 50%;
+    height: 70%;
+    transform: scale(0);
+    border-radius: 10px;
+    transition: transform .1s .0s;
+}
+
+.showImage{
+    transform: scale(1);
+}
+
+.show{
+    transform: translate(0);
+}
+
+.close{
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    width: 40px;
+    cursor: pointer;
+}
+
+
 
 footer {
     text-align: center;
