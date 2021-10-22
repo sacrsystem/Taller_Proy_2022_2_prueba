@@ -197,7 +197,7 @@
                         
                         <div class="row g-0 bg-light position-relative">
                             <div class="col-md-12 mb-md-0 p-md-4" >
-                              <img style="margin-top: -2.5%;" src="imagens/SC_AWS/av5.0.0.JPG" class="w-100" alt="...">
+                              <img style="margin-top: -1.5%;" src="imagens/SC_AWS/arquitecturafinal.JPG" class="w-100" alt="...">
                             </div>
                            
                           </div>   
@@ -219,15 +219,11 @@
                             <div class="w-100">
                               <h5  class="mt-10"><h3 class="subtitulo-patrocinadores especial">Arquitectura Versión 4.0.0</h3></h5>
                               <p class="parrafo" style="margin-left: 2%; margin-right: 3%; margin-top:-5%;">
-                                Implementaremos una web Responsive donde todos los alumnos puedan atraves de un chat comunicarse en diferentes áreas y así estar enterados de acontecimientos, eventos que se den en la universidad, también implementar un GPS para cada alumno y así poder registrarlos y ponerles asistencia utilizando un sensor que sea reconocido por un celular.
+                                Implementaremos una web Responsive donde todos los alumnos puedan hacer consultas y atraves de un chat comunicarse con las diferentes áreas de la universidad y así tener información específica que se de en la universidad, también mediante un sensor de temperatura medir la temperatura en el área de servidores, utilizando los servicios de AWS Amazon.
+                                El usuario que ingresa al CHAT CAMPUS mediante la web en su ordenador, recibirá la información mediante el API Gateway, componente cuya principal función es la de habilitar la conexión entre los servicios y los clientes, trabajando en su back-end mediante Amazon S3, GitHub y Visual Studio Code y poder hacer sus consultas en estudios generales. 
+                                Luego seguimos con Amazon Lex, que es un chatbot donde los usuarios (estudiantes) podrán realizar sus preguntas para acceder a los diferentes pabellones e información específica, el agente virtual de texto les va a ofrecer una experiencia instantánea para los usuarios ya que estos necesitan respuestas rápidas y precisas a cualquier hora del día y puedan solucionar problemas o encontrar la información que estaban buscando con urgencia atraves del Cloud Front y un S3.
+                                Continuando se usará el IOT para que se pueda medir la temperatura en las áreas de servidores mediante un sensor de temperatura se creara una función lambda para que el iot reciba y mande un archivo de tipo json a través de nuestro api Gateway la cual se guardara en un bucket creado en Amazon s3 y dentro del bucket se almacenará todos los archivos recibidos con la temperatura y humedad medida gracias al sensor.
 
-                                Comenzamos nuestra arquitectura con el usuario que ingresa al CHAT CAMPUS mediante la web en su ordenador, este chat recibe la información mediante el API Gateway, componente cuya principal función es la de habilitar la conexión entre los servicios y los clientes, trabajando en su back-end mediante Amazon S3, GitHub y Visual Studio Code.
-                                
-                                Luego seguimos con Amazon Lex, que es un chat bot donde los usuarios (estudiantes) podrán realizar sus preguntas para acceder a los diferentes pabellones, ubicación (GPS) e información específica, el agente virtual de texto les va a ofrecer una experiencia instantánea para los usuarios ya que estos necesitan respuestas rápidas y precisas a cualquier hora del día y puedan solucionar problemas o encontrar la información que estaban buscando con urgencia, y que también estará enlazado con el API Gateway que enviara transformara la información para que se comprenda y con AWS Lambda que se encargar de hacerle llegar la información que el GPS emita acompañado de una integración que se realiza de manera sencilla por ser las 2 plataformas de AWS mediante unas llaves o ‘keys’ que se obtienen en la configuración.
-                                
-                                Y con AWS Lambda podremos ejecutar los códigos provenientes de Amazon Lex y ser administrados automáticamente, ejecutando la lógica front-end en el lado del cliente y los servicios de seguridad, la BD y la lógica de back-end, esto con la idea de ahorrarnos tiempo y que nos permita desarrollar el chatbot.
-                                
-                                También se implementará Amazon Location Services que enviará la ubicación del usuario, integrándose mediante AWS Lambda con la misma modalidad de llaves o ‘keys’, para la ubicación de todos los usuarios que se encuentren en Fia, a través de un sensor GPS que está incluido en cada Smartphone. (IOT)
                               </p>
                               
                             </div>
@@ -235,7 +231,7 @@
                           <a style="display: inline-block; padding: 6px; width: 128px; font-weight: 300; border: 1px solid rgba(24, 16, 16, .7); color: #FBFCFC; font-size: 16px; background:#212F3C   ; text-align: center; text-decoration: none; border-radius: 16px; margin-top: 7%;
                                     " href="javascript:ventanaSecundaria('https://miro.com/app/board/o9J_l09mz1w=/')" class="boton">Ver Arquitectura </a>
                                     <a style="display: inline-block; padding: 6px; width: 128px; font-weight: 300; border: 1px solid rgba(24, 16, 16, .7); color: #FBFCFC; font-size: 16px; background:#212F3C   ; text-align: center; text-decoration: none; border-radius: 16px; margin-top: 7%;
-                                    " href="http://chatcampus.s3-website-sa-east-1.amazonaws.com" class="boton">Ver Web </a> 
+                                    " href="https://smart-campus.s3.amazonaws.com/SC-AWS/index.html" class="boton">Ver Web </a> 
                                 </div>
                           </div>   
                           <hr>    
@@ -416,4 +412,5 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script> 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
 </body>
+</html>
 </html>
