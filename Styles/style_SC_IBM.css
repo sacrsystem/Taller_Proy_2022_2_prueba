@@ -138,7 +138,7 @@ h6 {
 
 .contenedor {
     width: 100%;
-    max-width: 1700px;
+    max-width: 1600px;
     margin: auto;
     overflow: hidden;
 }
@@ -220,7 +220,7 @@ nav {
 }
 
 .img__logo{
-    width: 80%;
+    width: 90%;
 }
 
 .enlaces-header {
