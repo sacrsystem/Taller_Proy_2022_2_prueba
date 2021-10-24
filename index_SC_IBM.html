@@ -7,7 +7,6 @@
     <title>TALLER DE PROCESOS</title>
     <link rel="stylesheet" href="Styles/style_SC_IBM.css">
     <link rel="shortcut icon" href="imagens/SC_IBM/GrupoIBM.jpg" type="image/x-icon">
-    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
@@ -15,7 +14,7 @@
 
 <body class="main">
     <header>
-        <nav>
+        <nav id="nav">
             <section class="contenedor nav">
                 <div class="logo">
                     <a href="index.html"><img src="imagens/SC_IBM/FIA-logo.png" class="img__logo" alt=""></a>
@@ -28,7 +27,7 @@
                     <a href="index_SC_HUAWEI.html">HUAWEI</a>
                     <a href="index_SCA_ANCHOR.html">ANCHOR</a>
                     <a href="index_BLOCKCHAIN.html">BLOCKCHAIN</a>
-                    <a href="index_QUANTUM_COMPUTING.html">QUANTUM COMPUTING</a>
+                    <a href="index_QUANTUM_COMPUTING.html">QUANTUM C</a>
                     <a href="index_QA.html">Grupo QA</a>
                     <a href="index_GESTION.html">Grupo GESTIÓN</a>
                 </div>
@@ -92,7 +91,7 @@
 
         <section class="about-us">
             <div class="">
-                <h2 class="titulo">Miembros del Equipo</h2>
+                <h2 class="title">Miembros del Equipo</h2>
                 <div class="container__integrantes">
                     <div class="card-carousel">
                         <div class="card" id="1">
@@ -423,6 +422,11 @@
             </p>
     </div>
 
+    <!--Back to top button-->
+    <div id="button-up">
+        <i class="fas fa-chevron-up"></i>
+    </div>
+
     <footer id="footer">
         <div class="contenedor">
             <div class="copyright">
@@ -430,236 +434,6 @@
             </div>
         </div>
     </footer>
-
-    <script>
-        const repeat = false;
-        const noArrows = false;
-        const noBullets = false;
-
-
-        const container = document.querySelector('.slider-container');
-        var slide = document.querySelectorAll('.slider-single');
-        var slideTotal = slide.length - 1;
-        var slideCurrent = -1;
-
-        function initBullets() {
-            if (noBullets) {
-                return;
-            }
-            const bulletContainer = document.createElement('div');
-            bulletContainer.classList.add('bullet-container')
-            slide.forEach((elem, i) => {
-                const bullet = document.createElement('div');
-                bullet.classList.add('bullet')
-                bullet.id = `bullet-index-${i}`
-                bullet.addEventListener('click', () => {
-                    goToIndexSlide(i);
-                })
-                bulletContainer.appendChild(bullet);
-                elem.classList.add('proactivede');
-            })
-            container.appendChild(bulletContainer);
-        }
-
-        function initArrows() {
-            if (noArrows) {
-                return;
-            }
-            const leftArrow = document.createElement('a')
-            const iLeft = document.createElement('i');
-            iLeft.classList.add('fa')
-            iLeft.classList.add('fa-arrow-left')
-            leftArrow.classList.add('slider-left')
-            leftArrow.appendChild(iLeft)
-            leftArrow.addEventListener('click', () => {
-                slideLeft();
-            })
-            const rightArrow = document.createElement('a')
-            const iRight = document.createElement('i');
-            iRight.classList.add('fa')
-            iRight.classList.add('fa-arrow-right')
-            rightArrow.classList.add('slider-right')
-            rightArrow.appendChild(iRight)
-            rightArrow.addEventListener('click', () => {
-                slideRight();
-            })
-            container.appendChild(leftArrow);
-            container.appendChild(rightArrow);
-        }
-
-        function slideInitial() {
-            initBullets();
-            initArrows();
-            setTimeout(function () {
-                slideRight();
-            }, 500);
-        }
-
-        function updateBullet() {
-            if (!noBullets) {
-                document.querySelector('.bullet-container').querySelectorAll('.bullet').forEach((elem, i) => {
-                    elem.classList.remove('active');
-                    if (i === slideCurrent) {
-                        elem.classList.add('active');
-                    }
-                })
-            }
-            checkRepeat();
-        }
-
-        function checkRepeat() {
-            if (!repeat) {
-                if (slideCurrent === slide.length - 1) {
-                    slide[0].classList.add('not-visible');
-                    slide[slide.length - 1].classList.remove('not-visible');
-                    if (!noArrows) {
-                        document.querySelector('.slider-right').classList.add('not-visible')
-                        document.querySelector('.slider-left').classList.remove('not-visible')
-                    }
-                }
-                else if (slideCurrent === 0) {
-                    slide[slide.length - 1].classList.add('not-visible');
-                    slide[0].classList.remove('not-visible');
-                    if (!noArrows) {
-                        document.querySelector('.slider-left').classList.add('not-visible')
-                        document.querySelector('.slider-right').classList.remove('not-visible')
-                    }
-                } else {
-                    slide[slide.length - 1].classList.remove('not-visible');
-                    slide[0].classList.remove('not-visible');
-                    if (!noArrows) {
-                        document.querySelector('.slider-left').classList.remove('not-visible')
-                        document.querySelector('.slider-right').classList.remove('not-visible')
-                    }
-                }
-            }
-        }
-
-        function slideRight() {
-            if (slideCurrent < slideTotal) {
-                slideCurrent++;
-            } else {
-                slideCurrent = 0;
-            }
-
-            if (slideCurrent > 0) {
-                var preactiveSlide = slide[slideCurrent - 1];
-            } else {
-                var preactiveSlide = slide[slideTotal];
-            }
-            var activeSlide = slide[slideCurrent];
-            if (slideCurrent < slideTotal) {
-                var proactiveSlide = slide[slideCurrent + 1];
-            } else {
-                var proactiveSlide = slide[0];
-
-            }
-
-            slide.forEach((elem) => {
-                var thisSlide = elem;
-                if (thisSlide.classList.contains('preactivede')) {
-                    thisSlide.classList.remove('preactivede');
-                    thisSlide.classList.remove('preactive');
-                    thisSlide.classList.remove('active');
-                    thisSlide.classList.remove('proactive');
-                    thisSlide.classList.add('proactivede');
-                }
-                if (thisSlide.classList.contains('preactive')) {
-                    thisSlide.classList.remove('preactive');
-                    thisSlide.classList.remove('active');
-                    thisSlide.classList.remove('proactive');
-                    thisSlide.classList.remove('proactivede');
-                    thisSlide.classList.add('preactivede');
-                }
-            });
-            preactiveSlide.classList.remove('preactivede');
-            preactiveSlide.classList.remove('active');
-            preactiveSlide.classList.remove('proactive');
-            preactiveSlide.classList.remove('proactivede');
-            preactiveSlide.classList.add('preactive');
-
-            activeSlide.classList.remove('preactivede');
-            activeSlide.classList.remove('preactive');
-            activeSlide.classList.remove('proactive');
-            activeSlide.classList.remove('proactivede');
-            activeSlide.classList.add('active');
-
-            proactiveSlide.classList.remove('preactivede');
-            proactiveSlide.classList.remove('preactive');
-            proactiveSlide.classList.remove('active');
-            proactiveSlide.classList.remove('proactivede');
-            proactiveSlide.classList.add('proactive');
-
-            updateBullet();
-        }
-
-        function slideLeft() {
-            if (slideCurrent > 0) {
-                slideCurrent--;
-            } else {
-                slideCurrent = slideTotal;
-            }
-
-            if (slideCurrent < slideTotal) {
-                var proactiveSlide = slide[slideCurrent + 1];
-            } else {
-                var proactiveSlide = slide[0];
-            }
-            var activeSlide = slide[slideCurrent];
-            if (slideCurrent > 0) {
-                var preactiveSlide = slide[slideCurrent - 1];
-            } else {
-                var preactiveSlide = slide[slideTotal];
-            }
-            slide.forEach((elem) => {
-                var thisSlide = elem;
-                if (thisSlide.classList.contains('proactive')) {
-                    thisSlide.classList.remove('preactivede');
-                    thisSlide.classList.remove('preactive');
-                    thisSlide.classList.remove('active');
-                    thisSlide.classList.remove('proactive');
-                    thisSlide.classList.add('proactivede');
-                }
-                if (thisSlide.classList.contains('proactivede')) {
-                    thisSlide.classList.remove('preactive');
-                    thisSlide.classList.remove('active');
-                    thisSlide.classList.remove('proactive');
-                    thisSlide.classList.remove('proactivede');
-                    thisSlide.classList.add('preactivede');
-                }
-            });
-
-            preactiveSlide.classList.remove('preactivede');
-            preactiveSlide.classList.remove('active');
-            preactiveSlide.classList.remove('proactive');
-            preactiveSlide.classList.remove('proactivede');
-            preactiveSlide.classList.add('preactive');
-
-            activeSlide.classList.remove('preactivede');
-            activeSlide.classList.remove('preactive');
-            activeSlide.classList.remove('proactive');
-            activeSlide.classList.remove('proactivede');
-            activeSlide.classList.add('active');
-
-            proactiveSlide.classList.remove('preactivede');
-            proactiveSlide.classList.remove('preactive');
-            proactiveSlide.classList.remove('active');
-            proactiveSlide.classList.remove('proactivede');
-            proactiveSlide.classList.add('proactive');
-
-            updateBullet();
-        }
-
-        function goToIndexSlide(index) {
-            const sliding = (slideCurrent > index) ? () => slideRight() : () => slideLeft();
-            while (slideCurrent !== index) {
-                sliding();
-            }
-        }
-
-        slideInitial();
-
-    </script>
 
     <script>
         const imagenes = document.querySelectorAll('.img-galeria')
@@ -693,11 +467,10 @@
 
     <script src="js/SC_IBM/carousel-integrantes.js"></script>
     <script src="js/SC_IBM/slide.js"></script>
-    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-        crossorigin="anonymous"></script>
-</body>
+    <script src="js/SC_IBM/scroll.js"></script>
+    <script src="js/SC_IBM/arquitectura.js"></script>
+    <script src="js/SC_IBM/bttopbutton.js"></script>
 
+    <script src="https://kit.fontawesome.com/41bcea2ae3.js" crossorigin="anonymous"></script>
+</body>
 </html>
