@@ -20,12 +20,11 @@ body {
 header {
   display: flex;
   justify-content: center;
-  background-color: #40495a;
   width: 100%;
 }
 
 footer {
-  background-color: #40495a;
+  
 }
 
 .navigation {
@@ -38,6 +37,14 @@ footer {
   overflow: hidden;
   transition: width 0.5s;
   border-radius: 1px;
+}
+
+a.font{
+  color: #BD1714 !important;
+}
+.font a:focus, .font a:hover {
+  color: #a91816 !important;
+  text-decoration: underline;
 }
 
 .navigation:hover {
