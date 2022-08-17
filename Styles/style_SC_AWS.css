@@ -12,15 +12,20 @@ body {
     align-items: center;
     width: 100%;
     height: 100%;
-    background-image: url(../imagens/Principal/fondo.png);
-    background-attachment: fixed
+    background-color: #BD1714;
+    font-family: 'open sans';
+    font-size: 16px;
 }
 
 header {
     display: flex;
     justify-content: center;
-    background-color: #40495a;
     width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background-color: #ffffff;
+    border-bottom: 2px solid #BD1714;
 }
 
 .navigation {
@@ -93,13 +98,6 @@ header {
     white-space: nowrap;
 }
 
-
-body {
-    font-family: 'open sans';
-    font-size: 16px;
-    
-}
-
 /* No olvides suscribirte a AlexCG Design */
 /*
 Web hecha con AlexCG Design, si te sirvió la plantilla por favor entra a AlexCG Design
@@ -107,45 +105,6 @@ Web hecha con AlexCG Design, si te sirvió la plantilla por favor entra a AlexCG
 		->>>> https://www.youtube.com/alexcgdesign <<<<-
 */
 /* Header */
-
-header {
-    width: 100%;
-    
-    background-image: url(imagens/SC_AWS/Skewed.png);
-    background-attachment: fixed;
-    background-position: center;
-    background-size: cover;
-    position: relative;
-    overflow: hidden;
-    color: #fff;
-    text-align: center;
-}
-
-header .textos {
-    margin-top: 152px;
-}
-
-header .titulo {
-    font-size: 85px;
-}
-
-header .subtitulo {
-    font-size: 42px;
-    font-weight: 300;
-    margin-bottom: 32px;
-}
-
-header .boton {
-    display: inline-block;
-    padding: 6px;
-    width: 128px;
-    border: 1px solid #fff;
-    color: #fff;
-    font-size: 19px;
-    text-align: center;
-    text-decoration: none;
-    border-radius: 16px;
-}
 
 .sesgoabajo {
     z-index: 10;
@@ -164,7 +123,7 @@ header .boton {
     left: 0;
     border-width: 35vh 100vw 0 0;
     border-style: solid;
-    border-color:  #212F3C transparent transparent transparent;
+    border-color:  #BD1714 transparent transparent transparent;
 }
 
 .contenedor {
@@ -288,18 +247,29 @@ header .boton {
     height: 160px;
     object-fit: cover;
     border-radius: 100%;
-    margin-left: 50px;
+    margin: auto;
+}
+.nav-link{
+    color: #BD1714 !important;
+}
+.nav-link:focus, .nav-link:hover{
+    color: #752120 !important;
+}
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    color: #fff !important;
+    background-color: #BD1714 !important;
 }
 
-
 .fondo {
-    height: 1120px;
     position: relative;
     background-image: url(fondo.png);
     overflow: hidden;
     background-attachment: fixed;
     background-position: center;
-    padding-top: 130px;
+}
+.form-control:focus {
+    box-shadow: 0 0 0 0.25rem #ffffff !important;
+    border-color: #00000000 !important;
 }
 
 .sesgoabajo-unico {
@@ -309,7 +279,7 @@ header .boton {
     left: 0;
     border-width: 0 0 35vh 100vw;
     border-style: solid;
-    border-color: transparent transparent #2c3e50 transparent;
+    border-color: transparent transparent #BD1714 transparent;
 }
 
 .titulo-patrocinadores,
@@ -356,7 +326,7 @@ header .boton {
 /* Footer */
 
 footer {
-    background: #2c3e50;
+    background: #BD1714;
     height: auto;
 }
 
@@ -387,17 +357,14 @@ input[type="email"] {
     width: 48%;
     padding: 13px;
     border: none;
-    color: #fff;
     font-family: 'open sans';
-    background: rgba(37, 37, 33, .7);
     margin-bottom: 16px;
-    border-top: 5px solid rgba(37, 37, 33, .7);
 }
 
 input[type="text"]:focus,
 input[type="email"]:focus,
 textarea:focus {
-    border-top: 5px solid rgba(255, 255, 255, 0.7);
+    /*border-top: 5px solid rgba(255, 255, 255, 0.7);*/
 }
 
 textarea {
@@ -407,10 +374,8 @@ textarea {
     min-width: 100%;
     max-height: 200px;
     min-height: 200px;
-    background: rgba(37, 37, 33, .7);
     padding: 13px;
     border: none;
-    color: #fff;
     font-family: 'open sans';
     margin-bottom: 16px;
 }
@@ -419,8 +384,6 @@ input[type="submit"] {
     display: inline-block;
     padding: 13px;
     border: none;
-    color: #fff;
-    background: rgba(37, 37, 33, .7);
     width: 96px;
 }
 
